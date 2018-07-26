@@ -1,1 +1,2 @@
-# py_intro_class
+
+This repository contains resources for the Introduction to Python class.
