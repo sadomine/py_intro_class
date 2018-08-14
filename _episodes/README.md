@@ -1,7 +1,6 @@
 
 Module order for the *Introduction to Python* class.
-
-1. Run / Quit
+1. [Run / Quite] https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/run_quit.md)
 2. Variables
 3. Type Conversion
 4. Built Ins
