@@ -3,7 +3,7 @@
 
 1. [Run / Quit](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/run_quit.md)
 2. [Variables](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/variables.md)
-3. Type Conversion
+3. [Types Conversion](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/types_conversion.md)
 4. Built Ins
 5. Libraries
 6. Reading Tabular
