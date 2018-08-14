@@ -5,7 +5,7 @@
 2. [Variables](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/variables.md)
 3. [Types Conversion](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/types_conversion.md)
 4. [Built In](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/built_in.md)
-5. Libraries
+5. [Libraries](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/libraries.md)
 6. Reading Tabular
 7. Data Frames
 8. Plotting
