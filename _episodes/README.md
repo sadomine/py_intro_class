@@ -7,12 +7,12 @@
 4. [Built In](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/built_in.md)
 5. [Libraries](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/libraries.md)
 6. [Reading Tabular](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/reading_tabular.md)
-7. Data Frames
-8. Plotting
-9. Lists
-10. For Loops
-11. Looping Data Sets
-12. Writing Functions
-13. Conditionals
-14. Style
-15. Wrap
+7. [Data Frames](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/data_frames.md)
+8. [Plotting](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/plotting.md)
+9. [Lists](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/lists.md)
+10. [For Loops](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/for_loops.md)
+11. [Looping Data Sets](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/looping_data_sets.md)
+12. [Writing Functions](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/writing_functions.md)
+13. [Conditionals](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/conditionals.md)
+14. [Style](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/style.md)
+15. [Wrap](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/wrap.md)
