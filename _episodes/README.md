@@ -1,5 +1,5 @@
 
-## Introduction to Python (Module Order)
+## Introduction to Python (Episode Order)
 
 1. [Run / Quit](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/run_quit.md)
 2. [Variables](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/variables.md)
