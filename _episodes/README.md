@@ -1,5 +1,6 @@
 
-Module order for the *Introduction to Python* class.
+## Introduction to Python (Module Order)
+
 1. [Run / Quit](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/run_quit.md)
 2. Variables
 3. Type Conversion
