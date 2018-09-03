@@ -12,7 +12,7 @@
 
 
 # Introduction to Python (Original Episode Order)
-1. [Python Intro](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/python_intro.ipynb)
+1. [Run Quit](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/run_quit.ipynb)
 2. [Variables](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/variables.ipynb)
 3. [Type Conversion](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/types_conversions.ipynb)
 4. [Built In](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/built_in.ipynb)
