@@ -25,3 +25,5 @@
 11. [Looping Data Sets](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/looping_data_sets.ipynb)
 12. [Writing Functions](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/writing_functions.ipynb)
 13. [Conditionals](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/conditionals.ipynb)
+14. [Style](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/style.ipynb)
+15. [Wrap](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/wrap.ipynb)
