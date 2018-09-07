@@ -1,4 +1,3 @@
-
 # Introduction to Python (Episode Order)
 1. [Python Intro](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/python_intro.ipynb)
 2. [Built In](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/built_in.ipynb)
