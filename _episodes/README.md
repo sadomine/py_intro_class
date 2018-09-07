@@ -13,6 +13,7 @@
 10. [For Loops](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/for_loops.md)
 11. [Looping Data Sets](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/looping_data_sets.md)
 12. [Writing Functions](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/writing_functions.md)
+13. [Scope](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/scope.md)
 13. [Conditionals](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/conditionals.md)
 14. [Style](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/style.md)
 15. [Wrap](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes/wrap.md)
