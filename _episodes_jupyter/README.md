@@ -1,4 +1,4 @@
-# Introduction to Python
+# Introduction to Python (Episode Order)
 1. [Run Quit](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/run_quit.ipynb)
 2. [Variables](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/variables.ipynb)
 3. [Type Conversion](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/types_conversions.ipynb)
