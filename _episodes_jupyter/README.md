@@ -14,3 +14,5 @@
 13. [Conditionals](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/conditionals.ipynb)
 14. [Style](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/style.ipynb)
 15. [Wrap](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/wrap.ipynb)
+
+Note: To run Jupyter notebook in a directory other than the default, open a command-prompt window, change to the directory you wish to work in, and then type 'jupyter notebook'.
