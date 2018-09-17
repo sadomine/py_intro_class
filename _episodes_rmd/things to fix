@@ -1,0 +1,5 @@
+conditionals.Rmd table issue
+
+data_frames.Rmd, lists.Rmd Solutions code not showing properly - fixed by adding > > line before each solution.
+
+build_in.Rmd has js and css files
