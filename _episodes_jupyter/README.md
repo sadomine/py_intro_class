@@ -17,8 +17,8 @@
 
 ## Setting the Start Directory in Jupter: 
 
-1. [Jupyter Start 1](https://stackoverflow.com/questions/35254852/how-to-change-the-jupyter-start-up-folder#36433389)
-2. [Jupyter Start 2](https://github.com/jupyter/notebook/issues/2032)
+1. [StackOverflow](https://stackoverflow.com/questions/35254852/how-to-change-the-jupyter-start-up-folder#36433389)
+2. [GitHub](https://github.com/jupyter/notebook/issues/2032)
 
 Note: To run Jupyter in a directory other than the default, open a command-prompt window - change to the directory you wish to work in - and then type 'jupyter notebook.'
 
