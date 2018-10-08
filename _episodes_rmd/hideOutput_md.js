@@ -20,9 +20,9 @@ $(document).ready(function() {
       $('pre:not(.r)', this).children('code:not(r)').addClass('folded');
 
       // add button to plots
-      $(this).find('img').wrap('<pre class=\"plot\"></pre>');
-      $('pre.plot', this).prepend("<div class=\"showopt\">Plot</div><br style=\"line-height:22px;\"/>");
-      $('pre.plot', this).children('img').addClass('folded');
+      // $(this).find('img').wrap('<pre class=\"plot\"></pre>');
+      // $('pre.plot', this).prepend("<div class=\"showopt\">Plot</div><br style=\"line-height:22px;\"/>");
+      // $('pre.plot', this).children('img').addClass('folded');
 
     }
   });

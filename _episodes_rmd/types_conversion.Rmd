@@ -19,6 +19,11 @@ keypoints:
 - "Can mix integers and floats freely in operations."
 - "Variables only change value when something is assigned to them."
 ---
+
+<script src="hideOutput_md.js"></script>
+
+<link rel="stylesheet" type="text/css" href="fold.css">
+
 ## Every value has a type.
 
 *   Every value in a program has a specific type.
@@ -213,7 +218,7 @@ first is 2 and second is 5
 > How can you find out?
 >
 > > ## Solution
-> >
+> > <div class="fold s">
 > > It is a floating-point number (often abbreviated "float").
 > >
 > > ~~~
@@ -223,7 +228,7 @@ first is 2 and second is 5
 > > ~~~
 > > <class 'float'>
 > > ~~~
-> > 
+> > </div>
 > 
 
 
@@ -232,7 +237,7 @@ first is 2 and second is 5
 > What type of value is 3.25 + 4?
 >
 > > ## Solution
-> >
+> > <div class="fold s">
 > > It is a float:
 > > integers are automatically converted to floats as necessary.
 > >
@@ -244,7 +249,7 @@ first is 2 and second is 5
 > > ~~~
 > > 7.25 is <class 'float'>
 > > ~~~
-> > 
+> > </div>
 > 
 
 
@@ -310,6 +315,7 @@ first is 2 and second is 5
 > to reach everyone once.
 >
 > > ## Solution
+> > <div class="fold s">
 > > We want the minimum number of surveys that reaches everyone once, which is
 > > the rounded up value of `num_subjects / num_per_survey`. This is 
 > > equivalent to performing an integer division with `//` and adding 1.
@@ -325,7 +331,7 @@ first is 2 and second is 5
 > > ~~~
 > > 600 subjects, 42 per survey: 15
 > > ~~~
-> > 
+> > </div>
 > 
 
 
@@ -375,6 +381,7 @@ first is 2 and second is 5
 > 
 > 
 > > ## Solution
+> > <div class="fold s">
 > > What do you expect this program to do? It would not be so unreasonable to expect the Python 3 `int` command to
 > > convert the string "3.4" to 3.4 and an additional type conversion to 3. After all, Python 3 performs a lot of other
 > > magic - isn't that part of its charm?
@@ -396,7 +403,7 @@ first is 2 and second is 5
 > > ValueError: invalid literal for int() with base 10: '3.4'
 > > 3
 > > ~~~
-> > 
+> > </div>
 > 
 
 
@@ -420,8 +427,9 @@ first is 2 and second is 5
 > 6. `2.0 * second`
 >
 > > ## Solution
-> >
+> > <div class="fold s">
 > > Answer: 1 and 4
+> > </div>
 > 
 
 

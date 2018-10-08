@@ -16,6 +16,11 @@ keypoints:
 - "Use `DataFrame.T` to transpose a dataframe."
 - "Use `DataFrame.describe` to get summary statistics about data."
 ---
+
+<script src="hideOutput_md.js"></script>
+
+<link rel="stylesheet" type="text/css" href="fold.css">
+
 ## Use the Pandas library to do statistics on tabular data.
 
 *   Pandas is a widely-used Python library for statistics, particularly on tabular data.
@@ -231,13 +236,14 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 > and display its summary statistics.
 >
 > > ## Solution
+> > <div class="fold s">
 > > To read in a CSV, we use `pandas.read_csv` and pass the filename 'data/gapminder_gdp_americas.csv' to it. We also once again pass the
 > > column name 'country' to the parameter `index_col` in order to index by country:
 > > 
 > > ~~~
 > > americas = pandas.read_csv('data/gapminder_gdp_americas.csv', index_col='country')
 > > ~~~
-> > 
+> > </div>
 > 
 
 
@@ -254,6 +260,7 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 >     (Hint: you may need to change your view of the data.)
 >
 > > ## Solution
+> > <div class="fold s">
 > > 1. We can check out the first five rows of `americas` by executing `americas.head()` (allowing us to view the head
 > > of the DataFrame). We can specify the number of rows we wish to see by specifying the parameter `n` in our call
 > > to `americas.head()`. To view the first three rows, execute:
@@ -336,7 +343,7 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 > > ~~~
 > > americas.T.tail(n=3)
 > > ~~~
-> >
+> > </div>
 > 
 
 
@@ -359,6 +366,7 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 > What value(s) should you pass to `read_csv` to read `microbes.csv` in `analysis.ipynb`?
 > 
 > > ## Solution
+> > <div class="fold s">
 > > We need to specify the path to the file of interest in the call to `pandas.read_csv`. We first need to 'jump' out of
 > > the folder `thesis` using '../' and then into the folder `field_data` using 'field_data/'. Then we can specify the filename `microbes.csv.
 > > The result is as follows:
@@ -366,7 +374,7 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 > > ~~~
 > > data_microbes = pandas.read_csv('../field_data/microbes.csv')
 > > ~~~
-> >
+> > </div>
 > 
 
 
@@ -379,6 +387,7 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 > You can use `help` to get information on how to use `to_csv`.
 > 
 > > ## Solution
+> > <div class="fold s">
 > > In order to write the DataFrame `americas` to a file called `processed.csv`, execute the following command:
 > > 
 > > ~~~
@@ -393,4 +402,4 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 > >
 > > Note that `help(to_csv)` throws an error! This is a subtlety and is due to the fact that `to_csv` is NOT a function in 
 > > and of itself and the actual call is `americas.to_csv`. 
-> > 
+> > </div>

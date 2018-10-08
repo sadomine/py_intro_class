@@ -19,6 +19,11 @@ keypoints:
 - "Character strings are immutable."
 - "Indexing beyond the end of the collection is an error."
 ---
+
+<script src="hideOutput_md.js"></script>
+
+<link rel="stylesheet" type="text/css" href="fold.css">
+
 ## A list stores many values in a single structure.
 
 *   Doing calculations with a hundred variables called `pressure_001`, `pressure_002`, etc.,
@@ -220,7 +225,7 @@ IndexError: string index out of range
 > 
 >
 > > ## Solution
-> > 
+> > <div class="fold s">
 > > ~~~
 > > values = []
 > > values.append(1)
@@ -230,7 +235,7 @@ IndexError: string index out of range
 > > values = values[1:]
 > > print('second time:', values)
 > > ~~~
-> > 
+> > </div>
 > 
 
 
@@ -342,11 +347,12 @@ IndexError: string index out of range
 > 
 >
 > > ## Solution
+> > <div class="fold s">
 > > ~~~
 > > lithium
 > > 
 > > ~~~
-> > 
+> > </div>
 > 
 
 
@@ -372,6 +378,7 @@ IndexError: string index out of range
 > 
 >
 > > ## Solution
+> > <div class="fold s">
 > > Program A prints
 > > 
 > > ~~~
@@ -387,6 +394,7 @@ IndexError: string index out of range
 > > `sorted(letters)` returns a sorted copy of the list `letters` (the original
 > > list `letters` remains unchanged), while `letters.sort()` sorts the list
 > > `letters` in-place and does not return anything.
+> > </div>
 > 
 
 
@@ -414,6 +422,7 @@ IndexError: string index out of range
 > 
 >
 > > ## Solution
+> > <div class="fold s">
 > > Program A prints
 > > 
 > > ~~~
@@ -430,5 +439,6 @@ IndexError: string index out of range
 > > 
 > > `new = old[:]` however creates a new list object `new` containing all elements
 > > from the list `old`; `new` and `old` are different objects.
+> > </div>
 > 
 

@@ -16,6 +16,11 @@ keypoints:
 - "The Notebook will turn Markdown into pretty-printed documentation."
 - "Markdown does most of what HTML does."
 ---
+
+<script src="hideOutput_md.js"></script>
+
+<link rel="stylesheet" type="text/css" href="fold.css">
+
 ## Python programs are plain text files.
 
 *   They have the `.py` extension to let everyone (including the operating system) 
@@ -257,7 +262,7 @@ Or use [named links][data_carpentry].
 > 4.  Publish.
 > 
 > > ## Solution
-> >
+> > <div class="fold s">
 > > This challenge integrates both the numbered list and bullet list. 
 > > Note that the bullet list is indented 2 spaces so that it is inline with the items of the numbered list.
 > > 
@@ -270,6 +275,7 @@ Or use [named links][data_carpentry].
 > > 3.  Write up.
 > > 4.  Publish.
 > > ~~~
+> > </div>
 > 
 
 
@@ -286,13 +292,13 @@ Or use [named links][data_carpentry].
 > 
 > 
 > > ## Solution
-> >
+> > <div class="fold s">
 > > Python returns the output of the last calculation.
 > > 
 > > ~~~
 > > 3
 > > ~~~
-> > 
+> > </div>
 > 
 
 
@@ -315,7 +321,7 @@ Or use [named links][data_carpentry].
 > What happened and how might this be useful?
 > 
 > > ## Solution
-> >
+> > <div class="fold s">
 > > The Python code gets treated like markdown text.
 > > The lines appear as if they are part of one contiguous paragraph.
 > > This could be useful to temporarily turn on and off cells in notebooks that get used for multiple purposes.
@@ -323,7 +329,7 @@ Or use [named links][data_carpentry].
 > > ~~~
 > > x = 6 * 7 + 12 print(x)
 > > ~~~
-> > 
+> > </div>
 > 
 
 

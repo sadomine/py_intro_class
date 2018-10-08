@@ -17,6 +17,10 @@ teaching: 15
 exercises: 15
 ---
 
+<script src="hideOutput_md.js"></script>
+
+<link rel="stylesheet" type="text/css" href="fold.css">
+
 ## Note about Pandas DataFrames/Series
 
 A [DataFrame][pandas-dataframe] is a collection of [Series][pandas-series];
@@ -341,6 +345,7 @@ data.groupby(wealth_score).sum()
 
 >
 > > ## Solution
+> > <div class="fold s">
 > > The selection can be done by using the labels for both the row ("Serbia") and the column ("gdpPercap_2007"):
 > > 
 > > ~~~
@@ -348,10 +353,11 @@ data.groupby(wealth_score).sum()
 > > ~~~
 > >
 > > The output is
+> > 
 > > ~~~
 > > 9786.534714
 > > ~~~
-> >
+> > </div>
 > 
 
 
@@ -370,9 +376,11 @@ data.groupby(wealth_score).sum()
 
 > 
 > > ## Solution
+> > <div class="fold s">
+> > ~~~
+> > 
 > > No, they do not produce the same output! The output of the first statement is:
 > > 
-> > ~~~
 > >         gdpPercap_1952  gdpPercap_1957
 > > country                                
 > > Albania     1601.056136     1942.284244
@@ -393,6 +401,7 @@ data.groupby(wealth_score).sum()
 > > What conclusion can we draw? We see that a numerical slice, 0:2, *omits* the final index (i.e. index 2)
 > > in the range provided,
 > > while a named slice, 'gdpPercap_1952':'gdpPercap_1962', *includes* the final element.
+> > </div>
 > 
 
 
@@ -491,6 +500,7 @@ data.groupby(wealth_score).sum()
 
 >
 > > ## Solution
+> > <div class="fold s">
 > > 1:
 > > 
 > > ~~~
@@ -518,7 +528,7 @@ data.groupby(wealth_score).sum()
 > > ~~~
 > > data['gdpPercap_2007']/data['gdpPercap_1952']
 > > ~~~
-> > 
+> > </div>
 > 
 
 

@@ -15,6 +15,11 @@ keypoints:
 - "Many styles of plot are available: see the [Python Graph Gallery](https://python-graph-gallery.com/matplotlib/) for more options."
 - "Can plot many sets of data together."
 ---
+
+<script src="hideOutput_md.js"></script>
+
+<link rel="stylesheet" type="text/css" href="fold.css">
+
 ## [`matplotlib`](https://matplotlib.org/) is the most widely used scientific plotting library in Python.
 
 *   Commonly use a sub-library called [`matplotlib.pyplot`](https://matplotlib.org/api/pyplot_api.html).
@@ -129,18 +134,20 @@ plt.scatter(gdp_australia, gdp_nz)
 
 
 ![GDP correlation using plt.scatter](../fig/gdp_correlation_plt.png)
+
 ~~~
 data.T.plot.scatter(x = 'Australia', y = 'New Zealand')
 ~~~
 
 
 ![GDP correlation using data.T.plot.scatter](../fig/gdp_correlation_data.png)
+
 > ## Minima and Maxima
 >
 > Fill in the blanks below to plot the minimum GDP per capita over time
 > for all the countries in Europe.
 > Modify it again to plot the maximum GDP per capita over time for Europe.
->
+> 
 > ~~~
 > data_europe = pandas.read_csv('data/gapminder_gdp_europe.csv', index_col='country')
 > data_europe.____.plot(label='min')
@@ -149,9 +156,9 @@ data.T.plot.scatter(x = 'Australia', y = 'New Zealand')
 > plt.xticks(rotation=90)
 > ~~~
 > 
->
-> > ## Solution
 > >
+> > ## Solution
+> > <div class="fold s">
 > > ~~~
 > > data_europe = pandas.read_csv('data/gapminder_gdp_europe.csv', index_col='country')
 > > data_europe.min().plot(label='min')
@@ -161,6 +168,7 @@ data.T.plot.scatter(x = 'Australia', y = 'New Zealand')
 > > ~~~
 > > 
 > > ![Minima Maxima Solution](../fig/minima_maxima_solution.png)
+> > </div>
 > 
 
 

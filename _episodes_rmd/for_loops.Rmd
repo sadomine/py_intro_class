@@ -18,6 +18,11 @@ keypoints:
 - "Use `range` to iterate over a sequence of numbers."
 - "The Accumulator pattern turns many values into one."
 ---
+
+<script src="hideOutput_md.js"></script>
+
+<link rel="stylesheet" type="text/css" href="fold.css">
+
 ## A *for loop* executes commands once for each value in a collection.
 
 *   Doing calculations on the values in a list one by one
@@ -225,6 +230,7 @@ print(total)
 > ~~~
 > 
 > > ## Solution
+> > <div class="fold s">
 > > ~~~
 > > original = "tin"
 > > result = ""
@@ -232,7 +238,7 @@ print(total)
 > >     result = char + result
 > > print(result)
 > > ~~~
-> > 
+> > </div>
 > 
 
 
@@ -250,13 +256,14 @@ print(total)
 > ~~~
 > 
 > > ## Solution
+> > <div class="fold s">
 > > ~~~
 > > total = 0
 > > for word in ["red", "green", "blue"]:
 > >     total = total + len(word)
 > > print(total)
 > > ~~~
-> > 
+> > </div>
 > 
 >
 > ~~~
@@ -268,13 +275,14 @@ print(total)
 > ~~~
 > 
 > > ## Solution
+> > <div class="fold s">
 > > ~~~
 > > lengths = []
 > > for word in ["red", "green", "blue"]:
 > >     lengths.append(len(word))
 > > print(lengths)
 > > ~~~
-> > 
+> > </div>
 > 
 >
 > ~~~
@@ -287,6 +295,7 @@ print(total)
 > ~~~
 > 
 > > ## Solution
+> > <div class="fold s">
 > > ~~~
 > > words = ["red", "green", "blue"]
 > > result = ""
@@ -294,7 +303,7 @@ print(total)
 > >     result = result + word
 > > print(result)
 > > ~~~
-> > 
+> > </div>
 > 
 >
 > ~~~
@@ -303,13 +312,14 @@ print(total)
 > ~~~
 > 
 > > ## Solution
+> > <div class="fold s">
 > > ~~~
 > > acronym = ""
 > > for word in ["red", "green", "blue"]:
 > >     acronym = acronym + word[0].upper()
 > > print(acronym)
 > > ~~~
-> > 
+> > </div>
 > 
 
 
@@ -330,6 +340,7 @@ print(total)
 > ~~~
 > 
 > > ## Solution
+> > <div class="fold s">
 > > ~~~
 > > sum = 0
 > > data = [1,2,2,5]
@@ -339,7 +350,7 @@ print(total)
 > >     cumulative.append(sum)
 > > print(cumulative)
 > > ~~~
-> > 
+> > </div>
 > 
 
 
@@ -365,6 +376,7 @@ print(total)
 > ~~~
 > 
 > > ## Solution
+> > <div class="fold s">
 > > ~~~
 > > message = ""
 > > for number in range(10):
@@ -375,7 +387,7 @@ print(total)
 > >         message = message + "b"
 > > print(message)
 > > ~~~
-> > 
+> > </div>
 > 
 
 
@@ -392,10 +404,11 @@ print(total)
 > ~~~
 > 
 > > ## Solution
+> > <div class="fold s">
 > > ~~~
 > > seasons = ['Spring', 'Summer', 'Fall', 'Winter']
 > > print('My favorite season is ', seasons[3])
 > > ~~~
-> > 
+> > </div>
 > 
 

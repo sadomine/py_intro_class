@@ -19,6 +19,11 @@ keypoints:
 - "Python is case-sensitive."
 - "Use meaningful variable names."
 ---
+
+<script src="hideOutput_md.js"></script>
+
+<link rel="stylesheet" type="text/css" href="fold.css">
+
 ## Use variables to store values.
 
 *   Variables are names for values.
@@ -216,7 +221,7 @@ print(ewr_422_yY, 'is', flabadab, 'years old')
 > ~~~
 > 
 > > ## Solution
-> >
+> > <div class="fold s">
 > > ~~~
 > > # Command  # Value of x   # Value of y   # Value of swap #
 > > x = 1.0    # 1.0          # not defined  # not defined   #
@@ -229,6 +234,7 @@ print(ewr_422_yY, 'is', flabadab, 'years old')
 > > 
 > > These three lines exchange the values in `x` and `y` using the `swap`
 > > variable for temporary storage. This is a fairly common programming idiom.
+> > </div>
 >
 
 
@@ -245,7 +251,7 @@ print(ewr_422_yY, 'is', flabadab, 'years old')
 > ~~~
 > 
 > > ## Solution
-> >
+> > <div class="fold s">
 > > ~~~
 > > 'left'
 > > ~~~
@@ -256,6 +262,7 @@ print(ewr_422_yY, 'is', flabadab, 'years old')
 >> the string value 'left'. In third line, the `initial` variable is given the
 >> value 'right', but the `position` variable retains its string value
 >> of 'left'.
+> > </div>
 >
 
 
@@ -265,6 +272,7 @@ print(ewr_422_yY, 'is', flabadab, 'years old')
 > what happens if you try to get the second digit of `a` via `a[1]`?
 >
 > > ## Solution
+> > <div class="fold s">
 > > Numbers are not stored in the written representation,
 > > so they can't be treated like strings.
 > >
@@ -276,7 +284,7 @@ print(ewr_422_yY, 'is', flabadab, 'years old')
 > > ~~~
 > > TypeError: 'int' object is not subscriptable
 > > ~~~
-> > 
+> > </div>
 > 
 
 

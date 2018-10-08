@@ -14,6 +14,11 @@ keypoints:
 - "Use `glob` and `for` to process batches of files."
 ---
 
+<script src="hideOutput_md.js"></script>
+
+<link rel="stylesheet" type="text/css" href="fold.css">
+
+
 ## Use a `for` loop to process files given a list of their names.
 
 *   A filename is just a character string.
@@ -141,6 +146,7 @@ data/gapminder_gdp_oceania.csv 10039.59564
 > the number of rows and columns of the data frame.
 >
 > > ## Solution
+> > <div class="fold s">
 > > ~~~
 > > import glob
 > > import pandas
@@ -150,7 +156,7 @@ data/gapminder_gdp_oceania.csv 10039.59564
 > >     fewest = min(fewest, dataframe.shape[0])
 > > print('smallest file has', fewest, 'records')
 > > ~~~
-> > 
+> > </div>
 > 
 
 
@@ -159,7 +165,9 @@ data/gapminder_gdp_oceania.csv 10039.59564
 > Write a program that reads in the regional data sets
 > and plots the average GDP per capita for each region over time
 > in a single chart.
+> 
 > > ## Solution
+> > <div class="fold s">
 > > ~~~
 > > import glob
 > > import pandas 
@@ -173,6 +181,6 @@ data/gapminder_gdp_oceania.csv 10039.59564
 > > plt.legend()
 > > plt.show()
 > > ~~~
-> > 
+> > </div>
 > 
 

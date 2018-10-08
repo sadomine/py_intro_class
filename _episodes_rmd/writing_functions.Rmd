@@ -14,6 +14,11 @@ keypoints:
 - "Arguments in call are matched to parameters in definition."
 - "Functions may return a result to their caller using `return`."
 ---
+
+<script src="hideOutput_md.js"></script>
+
+<link rel="stylesheet" type="text/css" href="fold.css">
+
 ## Break programs down into functions to make them easier to understand.
 
 *   Human beings can only keep a few items in working memory at a time.
@@ -161,14 +166,14 @@ result of call is: None
 > 
 >
 > > ## Solution
-> >
+> > <div class="fold s">
 > > ~~~
 > > def another_function():
 > >   print("Syntax errors are annoying.")
 > >   print("But at least Python tells us about them!")
 > >   print("So they are usually not too hard to fix.")
 > > ~~~
-> > 
+> > </div>
 > 
 
 
@@ -184,7 +189,7 @@ result of call is: None
 > ~~~
 > 
 > > ## Solution
-> >
+> > <div class="fold s">
 > > ~~~
 > > calling <function report at 0x7fd128ff1bf8> 22.5
 > > ~~~ 
@@ -195,6 +200,7 @@ result of call is: None
 > > print("calling")
 > > report(22.5)
 > > ~~~
+> > </div>
 > 
 
 
@@ -279,7 +285,7 @@ result of call is: None
 > ~~~
 > 
 > > ## Solution
-> >
+> > <div class="fold s">
 > > ~~~
 > > def first_negative(values):
 > >     for v in values:
@@ -288,6 +294,7 @@ result of call is: None
 > > ~~~
 > > 
 > > If an empty list is passed to this function, it returns `None`:
+> > 
 > > ~~~
 > > my_list = []
 > > print(first_negative(my_list)
@@ -296,7 +303,7 @@ result of call is: None
 > > ~~~
 > > None
 > > ~~~
-> > 
+> > </div>
 > 
 
 
@@ -382,7 +389,7 @@ result of call is: None
 > 2.  A dirty egg might have a mass of more than 90 grams, and a spoiled or broken egg will probably have a mass that's less than 50 grams.  Modify your `print_egg_label()` function to account for these error conditions. Sample output could be `25 too light, probably spoiled`.
 >
 > > ## Solution
-> >
+> > <div class="fold s">
 > > ~~~
 > > def print_egg_label(mass):
 > >     #egg sizing machinery prints a label
@@ -399,7 +406,7 @@ result of call is: None
 > >     else:
 > >         return("small")
 > > ~~~
-> > 
+> > </div>
 > 
 
 
@@ -444,7 +451,7 @@ result of call is: None
 >    instead of enumerating them in the code.)
 >
 > > ## Solution
-> >
+> > <div class="fold s">
 > > 1.
 > >
 > > ~~~
@@ -495,7 +502,7 @@ result of call is: None
 > > ~~~
 > > 20880.023800000003
 > > ~~~
-> > 
+> > </div>
 > 
 
 > ## Simulating a dynamical system
@@ -511,7 +518,7 @@ result of call is: None
 >
 >
 > > ## Solution
-> >
+> > <div class="fold s">
 > > 1.
 > >
 > > ~~~
@@ -541,6 +548,6 @@ result of call is: None
 > >         trajectory[t] = logistic_map(trajectory[t-1], r)
 > >     return trajectorys
 > > ~~~
-> > 
+> > </div>
 > 
 

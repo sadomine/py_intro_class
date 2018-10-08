@@ -16,6 +16,11 @@ keypoints:
 - "Import specific items from a library to shorten programs."
 - "Create an alias for a library when importing it to shorten programs."
 ---
+
+<script src="hideOutput_md.js"></script>
+
+<link rel="stylesheet" type="text/css" href="fold.css">
+
 ## Most of the power of a programming language is in its libraries.
 
 *   A *library* is a collection of files (called *modules*) that contains
@@ -161,7 +166,7 @@ cos(pi) is -1.0
 > 3. Try to write a program that uses the function.
 >
 > > ## Solution
-> >
+> > <div class="fold s">
 > > The [random module](randommod) seems like it could help you.
 > >
 > > The string has 11 characters, each having a positional index from 0 to 10.
@@ -201,6 +206,7 @@ cos(pi) is -1.0
 > >
 > > There's also other functions you could use, but with more convoluted
 > > code as a result.
+> > </div>
 > 
 
 
@@ -222,7 +228,7 @@ cos(pi) is -1.0
 > 
 >
 > > ## Solution
-> >
+> > <div class="fold s">
 > > ~~~
 > > import math 
 > > import random
@@ -231,7 +237,7 @@ cos(pi) is -1.0
 > > idx = random.randrange(n_bases)
 > > print("random base", bases[idx], "base index", idx)
 > > ~~~
-> > 
+> > </div>
 > >
 > 
 
@@ -249,8 +255,11 @@ cos(pi) is -1.0
 > What has your colleague forgotten to do?
 >
 > > ## Solution
-> >
-> > Importing the math module (`import math`)
+> > <div class="fold s">
+> > ~~~
+> > import math
+> > ~~~
+> > </div>
 > 
 
 
@@ -268,7 +277,7 @@ cos(pi) is -1.0
 > 
 >
 > > ## Solution
-> >
+> > <div class="fold s">
 > > ~~~
 > > import math as m
 > > angle = m.degrees(m.pi / 2)
@@ -284,7 +293,7 @@ cos(pi) is -1.0
 > > print(angle)
 > > ~~~
 > > 
-> >
+> > </div>
 > > Since you just wrote the code and are familiar with it, you might actually
 > > find the first version easier to read. But when trying to read a huge piece
 > > of code written by someone else, or when getting back to your own huge piece
@@ -339,13 +348,13 @@ cos(pi) is -1.0
 > 
 >
 > > ## Solution
-> >
+> > <div class="fold s">
 > > ~~~
 > > from math import degrees, pi
 > > angle = degrees(pi / 2)
 > > print(angle)
 > > ~~~
-> > 
+> > </div>
 > >
 > > Most likely you find this version easier to read since it's less dense.
 > > The main reason not to use this form of import is to avoid name clashes.

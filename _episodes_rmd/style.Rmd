@@ -15,6 +15,10 @@ keypoints:
 - "Use docstrings to provide online help."
 ---
 
+<script src="hideOutput_md.js"></script>
+
+<link rel="stylesheet" type="text/css" href="fold.css">
+
 ## Coding style
 
 Coding style helps us to understand the code better. It helps to maintain and change the code.
@@ -139,7 +143,7 @@ average(values)
 > ~~~
 > 
 > > ## Solution
-> >
+> > <div class="fold s">
 > > ~~~
 > > def middle(a, b, c):
 > >     '''Return the middle value of three.
@@ -148,7 +152,7 @@ average(values)
 > >     values.sort()
 > >     return values[1]
 > > ~~~
-> > 
+> > </div>
 > 
 
 
@@ -182,7 +186,7 @@ average(values)
 > 
 >
 > > ## Solution
-> >
+> > <div class="fold s">
 > > Here's one solution.
 > >
 > > ~~~
@@ -211,7 +215,7 @@ average(values)
 > >
 > > string_machine('et cetera', 10)
 > > ~~~
-> > 
+> > </div>
 > > 
 > > ~~~
 > > et cetera

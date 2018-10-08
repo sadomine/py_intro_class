@@ -11,7 +11,7 @@
 
 
 
-<title>Libraries</title>
+<title>Reading Tabular Data into DataFrames</title>
 
 <script>/*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */
 !function(a,b){"object"==typeof module&&"object"==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error("jQuery requires a window with a document");return b(a)}:b(a)}("undefined"!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l="1.11.3",m=function(a,b){return new m.fn.init(a,b)},n=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,o=/^-ms-/,p=/-([\da-z])/gi,q=function(a,b){return b.toUpperCase()};m.fn=m.prototype={jquery:l,constructor:m,selector:"",length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0>a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=m.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return m.each(this,a,b)},map:function(a){return this.pushStack(m.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0>a?b:0);return this.pushStack(c>=0&&b>c?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},m.extend=m.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for("boolean"==typeof g&&(j=g,g=arguments[h]||{},h++),"object"==typeof g||m.isFunction(g)||(g={}),h===i&&(g=this,h--);i>h;h++)if(null!=(e=arguments[h]))for(d in e)a=g[d],c=e[d],g!==c&&(j&&c&&(m.isPlainObject(c)||(b=m.isArray(c)))?(b?(b=!1,f=a&&m.isArray(a)?a:[]):f=a&&m.isPlainObject(a)?a:{},g[d]=m.extend(j,f,c)):void 0!==c&&(g[d]=c));return g},m.extend({expando:"jQuery"+(l+Math.random()).replace(/\D/g,""),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return"function"===m.type(a)},isArray:Array.isArray||function(a){return"array"===m.type(a)},isWindow:function(a){return null!=a&&a==a.window},isNumeric:function(a){return!m.isArray(a)&&a-parseFloat(a)+1>=0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},isPlainObject:function(a){var b;if(!a||"object"!==m.type(a)||a.nodeType||m.isWindow(a))return!1;try{if(a.constructor&&!j.call(a,"constructor")&&!j.call(a.constructor.prototype,"isPrototypeOf"))return!1}catch(c){return!1}if(k.ownLast)for(b in a)return j.call(a,b);for(b in a);return void 0===b||j.call(a,b)},type:function(a){return null==a?a+"":"object"==typeof a||"function"==typeof a?h[i.call(a)]||"object":typeof a},globalEval:function(b){b&&m.trim(b)&&(a.execScript||function(b){a.eval.call(a,b)})(b)},camelCase:function(a){return a.replace(o,"ms-").replace(p,q)},nodeName:function(a,b){return a.nodeName&&a.nodeName.toLowerCase()===b.toLowerCase()},each:function(a,b,c){var d,e=0,f=a.length,g=r(a);if(c){if(g){for(;f>e;e++)if(d=b.apply(a[e],c),d===!1)break}else for(e in a)if(d=b.apply(a[e],c),d===!1)break}else if(g){for(;f>e;e++)if(d=b.call(a[e],e,a[e]),d===!1)break}else for(e in a)if(d=b.call(a[e],e,a[e]),d===!1)break;return a},trim:function(a){return null==a?"":(a+"").replace(n,"")},makeArray:function(a,b){var c=b||[];return null!=a&&(r(Object(a))?m.merge(c,"string"==typeof a?[a]:a):f.call(c,a)),c},inArray:function(a,b,c){var d;if(b){if(g)return g.call(b,a,c);for(d=b.length,c=c?0>c?Math.max(0,d+c):c:0;d>c;c++)if(c in b&&b[c]===a)return c}return-1},merge:function(a,b){var c=+b.length,d=0,e=a.length;while(c>d)a[e++]=b[d++];if(c!==c)while(void 0!==b[d])a[e++]=b[d++];return a.length=e,a},grep:function(a,b,c){for(var d,e=[],f=0,g=a.length,h=!c;g>f;f++)d=!b(a[f],f),d!==h&&e.push(a[f]);return e},map:function(a,b,c){var d,f=0,g=a.length,h=r(a),i=[];if(h)for(;g>f;f++)d=b(a[f],f,c),null!=d&&i.push(d);else for(f in a)d=b(a[f],f,c),null!=d&&i.push(d);return e.apply([],i)},guid:1,proxy:function(a,b){var c,e,f;return"string"==typeof b&&(f=a[b],b=a,a=f),m.isFunction(a)?(c=d.call(arguments,2),e=function(){return a.apply(b||this,c.concat(d.call(arguments)))},e.guid=a.guid=a.guid||m.guid++,e):void 0},now:function(){return+new Date},support:k}),m.each("Boolean Number String Function Array Date RegExp Object Error".split(" "),function(a,b){h["[object "+b+"]"]=b.toLowerCase()});function r(a){var b="length"in a&&a.length,c=m.type(a);return"function"===c||m.isWindow(a)?!1:1===a.nodeType&&b?!0:"array"===c||0===b||"number"==typeof b&&b>0&&b-1 in a}var s=function(a){var b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u="sizzle"+1*new Date,v=a.document,w=0,x=0,y=ha(),z=ha(),A=ha(),B=function(a,b){return a===b&&(l=!0),0},C=1<<31,D={}.hasOwnProperty,E=[],F=E.pop,G=E.push,H=E.push,I=E.slice,J=function(a,b){for(var c=0,d=a.length;d>c;c++)if(a[c]===b)return c;return-1},K="checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",L="[\\x20\\t\\r\\n\\f]",M="(?:\\\\.|[\\w-]|[^\\x00-\\xa0])+",N=M.replace("w","w#"),O="\\["+L+"*("+M+")(?:"+L+"*([*^$|!~]?=)"+L+"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|("+N+"))|)"+L+"*\\]",P=":("+M+")(?:\\((('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|((?:\\\\.|[^\\\\()[\\]]|"+O+")*)|.*)\\)|)",Q=new RegExp(L+"+","g"),R=new RegExp("^"+L+"+|((?:^|[^\\\\])(?:\\\\.)*)"+L+"+$","g"),S=new RegExp("^"+L+"*,"+L+"*"),T=new RegExp("^"+L+"*([>+~]|"+L+")"+L+"*"),U=new RegExp("="+L+"*([^\\]'\"]*?)"+L+"*\\]","g"),V=new RegExp(P),W=new RegExp("^"+N+"$"),X={ID:new RegExp("^#("+M+")"),CLASS:new RegExp("^\\.("+M+")"),TAG:new RegExp("^("+M.replace("w","w*")+")"),ATTR:new RegExp("^"+O),PSEUDO:new RegExp("^"+P),CHILD:new RegExp("^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\("+L+"*(even|odd|(([+-]|)(\\d*)n|)"+L+"*(?:([+-]|)"+L+"*(\\d+)|))"+L+"*\\)|)","i"),bool:new RegExp("^(?:"+K+")$","i"),needsContext:new RegExp("^"+L+"*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\("+L+"*((?:-\\d)?\\d*)"+L+"*\\)|)(?=[^-]|$)","i")},Y=/^(?:input|select|textarea|button)$/i,Z=/^h\d$/i,$=/^[^{]+\{\s*\[native \w/,_=/^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,aa=/[+~]/,ba=/'|\\/g,ca=new RegExp("\\\\([\\da-f]{1,6}"+L+"?|("+L+")|.)","ig"),da=function(a,b,c){var d="0x"+b-65536;return d!==d||c?b:0>d?String.fromCharCode(d+65536):String.fromCharCode(d>>10|55296,1023&d|56320)},ea=function(){m()};try{H.apply(E=I.call(v.childNodes),v.childNodes),E[v.childNodes.length].nodeType}catch(fa){H={apply:E.length?function(a,b){G.apply(a,I.call(b))}:function(a,b){var c=a.length,d=0;while(a[c++]=b[d++]);a.length=c-1}}}function ga(a,b,d,e){var f,h,j,k,l,o,r,s,w,x;if((b?b.ownerDocument||b:v)!==n&&m(b),b=b||n,d=d||[],k=b.nodeType,"string"!=typeof a||!a||1!==k&&9!==k&&11!==k)return d;if(!e&&p){if(11!==k&&(f=_.exec(a)))if(j=f[1]){if(9===k){if(h=b.getElementById(j),!h||!h.parentNode)return d;if(h.id===j)return d.push(h),d}else if(b.ownerDocument&&(h=b.ownerDocument.getElementById(j))&&t(b,h)&&h.id===j)return d.push(h),d}else{if(f[2])return H.apply(d,b.getElementsByTagName(a)),d;if((j=f[3])&&c.getElementsByClassName)return H.apply(d,b.getElementsByClassName(j)),d}if(c.qsa&&(!q||!q.test(a))){if(s=r=u,w=b,x=1!==k&&a,1===k&&"object"!==b.nodeName.toLowerCase()){o=g(a),(r=b.getAttribute("id"))?s=r.replace(ba,"\\$&"):b.setAttribute("id",s),s="[id='"+s+"'] ",l=o.length;while(l--)o[l]=s+ra(o[l]);w=aa.test(a)&&pa(b.parentNode)||b,x=o.join(",")}if(x)try{return H.apply(d,w.querySelectorAll(x)),d}catch(y){}finally{r||b.removeAttribute("id")}}}return i(a.replace(R,"$1"),b,d,e)}function ha(){var a=[];function b(c,e){return a.push(c+" ")>d.cacheLength&&delete b[a.shift()],b[c+" "]=e}return b}function ia(a){return a[u]=!0,a}function ja(a){var b=n.createElement("div");try{return!!a(b)}catch(c){return!1}finally{b.parentNode&&b.parentNode.removeChild(b),b=null}}function ka(a,b){var c=a.split("|"),e=a.length;while(e--)d.attrHandle[c[e]]=b}function la(a,b){var c=b&&a,d=c&&1===a.nodeType&&1===b.nodeType&&(~b.sourceIndex||C)-(~a.sourceIndex||C);if(d)return d;if(c)while(c=c.nextSibling)if(c===b)return-1;return a?1:-1}function ma(a){return function(b){var c=b.nodeName.toLowerCase();return"input"===c&&b.type===a}}function na(a){return function(b){var c=b.nodeName.toLowerCase();return("input"===c||"button"===c)&&b.type===a}}function oa(a){return ia(function(b){return b=+b,ia(function(c,d){var e,f=a([],c.length,b),g=f.length;while(g--)c[e=f[g]]&&(c[e]=!(d[e]=c[e]))})})}function pa(a){return a&&"undefined"!=typeof a.getElementsByTagName&&a}c=ga.support={},f=ga.isXML=function(a){var b=a&&(a.ownerDocument||a).documentElement;return b?"HTML"!==b.nodeName:!1},m=ga.setDocument=function(a){var b,e,g=a?a.ownerDocument||a:v;return g!==n&&9===g.nodeType&&g.documentElement?(n=g,o=g.documentElement,e=g.defaultView,e&&e!==e.top&&(e.addEventListener?e.addEventListener("unload",ea,!1):e.attachEvent&&e.attachEvent("onunload",ea)),p=!f(g),c.attributes=ja(function(a){return a.className="i",!a.getAttribute("className")}),c.getElementsByTagName=ja(function(a){return a.appendChild(g.createComment("")),!a.getElementsByTagName("*").length}),c.getElementsByClassName=$.test(g.getElementsByClassName),c.getById=ja(function(a){return o.appendChild(a).id=u,!g.getElementsByName||!g.getElementsByName(u).length}),c.getById?(d.find.ID=function(a,b){if("undefined"!=typeof b.getElementById&&p){var c=b.getElementById(a);return c&&c.parentNode?[c]:[]}},d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){return a.getAttribute("id")===b}}):(delete d.find.ID,d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){var c="undefined"!=typeof a.getAttributeNode&&a.getAttributeNode("id");return c&&c.value===b}}),d.find.TAG=c.getElementsByTagName?function(a,b){return"undefined"!=typeof b.getElementsByTagName?b.getElementsByTagName(a):c.qsa?b.querySelectorAll(a):void 0}:function(a,b){var c,d=[],e=0,f=b.getElementsByTagName(a);if("*"===a){while(c=f[e++])1===c.nodeType&&d.push(c);return d}return f},d.find.CLASS=c.getElementsByClassName&&function(a,b){return p?b.getElementsByClassName(a):void 0},r=[],q=[],(c.qsa=$.test(g.querySelectorAll))&&(ja(function(a){o.appendChild(a).innerHTML="<a id='"+u+"'></a><select id='"+u+"-\f]' msallowcapture=''><option selected=''></option></select>",a.querySelectorAll("[msallowcapture^='']").length&&q.push("[*^$]="+L+"*(?:''|\"\")"),a.querySelectorAll("[selected]").length||q.push("\\["+L+"*(?:value|"+K+")"),a.querySelectorAll("[id~="+u+"-]").length||q.push("~="),a.querySelectorAll(":checked").length||q.push(":checked"),a.querySelectorAll("a#"+u+"+*").length||q.push(".#.+[+~]")}),ja(function(a){var b=g.createElement("input");b.setAttribute("type","hidden"),a.appendChild(b).setAttribute("name","D"),a.querySelectorAll("[name=d]").length&&q.push("name"+L+"*[*^$|!~]?="),a.querySelectorAll(":enabled").length||q.push(":enabled",":disabled"),a.querySelectorAll("*,:x"),q.push(",.*:")})),(c.matchesSelector=$.test(s=o.matches||o.webkitMatchesSelector||o.mozMatchesSelector||o.oMatchesSelector||o.msMatchesSelector))&&ja(function(a){c.disconnectedMatch=s.call(a,"div"),s.call(a,"[s!='']:x"),r.push("!=",P)}),q=q.length&&new RegExp(q.join("|")),r=r.length&&new RegExp(r.join("|")),b=$.test(o.compareDocumentPosition),t=b||$.test(o.contains)?function(a,b){var c=9===a.nodeType?a.documentElement:a,d=b&&b.parentNode;return a===d||!(!d||1!==d.nodeType||!(c.contains?c.contains(d):a.compareDocumentPosition&&16&a.compareDocumentPosition(d)))}:function(a,b){if(b)while(b=b.parentNode)if(b===a)return!0;return!1},B=b?function(a,b){if(a===b)return l=!0,0;var d=!a.compareDocumentPosition-!b.compareDocumentPosition;return d?d:(d=(a.ownerDocument||a)===(b.ownerDocument||b)?a.compareDocumentPosition(b):1,1&d||!c.sortDetached&&b.compareDocumentPosition(a)===d?a===g||a.ownerDocument===v&&t(v,a)?-1:b===g||b.ownerDocument===v&&t(v,b)?1:k?J(k,a)-J(k,b):0:4&d?-1:1)}:function(a,b){if(a===b)return l=!0,0;var c,d=0,e=a.parentNode,f=b.parentNode,h=[a],i=[b];if(!e||!f)return a===g?-1:b===g?1:e?-1:f?1:k?J(k,a)-J(k,b):0;if(e===f)return la(a,b);c=a;while(c=c.parentNode)h.unshift(c);c=b;while(c=c.parentNode)i.unshift(c);while(h[d]===i[d])d++;return d?la(h[d],i[d]):h[d]===v?-1:i[d]===v?1:0},g):n},ga.matches=function(a,b){return ga(a,null,null,b)},ga.matchesSelector=function(a,b){if((a.ownerDocument||a)!==n&&m(a),b=b.replace(U,"='$1']"),!(!c.matchesSelector||!p||r&&r.test(b)||q&&q.test(b)))try{var d=s.call(a,b);if(d||c.disconnectedMatch||a.document&&11!==a.document.nodeType)return d}catch(e){}return ga(b,n,null,[a]).length>0},ga.contains=function(a,b){return(a.ownerDocument||a)!==n&&m(a),t(a,b)},ga.attr=function(a,b){(a.ownerDocument||a)!==n&&m(a);var e=d.attrHandle[b.toLowerCase()],f=e&&D.call(d.attrHandle,b.toLowerCase())?e(a,b,!p):void 0;return void 0!==f?f:c.attributes||!p?a.getAttribute(b):(f=a.getAttributeNode(b))&&f.specified?f.value:null},ga.error=function(a){throw new Error("Syntax error, unrecognized expression: "+a)},ga.uniqueSort=function(a){var b,d=[],e=0,f=0;if(l=!c.detectDuplicates,k=!c.sortStable&&a.slice(0),a.sort(B),l){while(b=a[f++])b===a[f]&&(e=d.push(f));while(e--)a.splice(d[e],1)}return k=null,a},e=ga.getText=function(a){var b,c="",d=0,f=a.nodeType;if(f){if(1===f||9===f||11===f){if("string"==typeof a.textContent)return a.textContent;for(a=a.firstChild;a;a=a.nextSibling)c+=e(a)}else if(3===f||4===f)return a.nodeValue}else while(b=a[d++])c+=e(b);return c},d=ga.selectors={cacheLength:50,createPseudo:ia,match:X,attrHandle:{},find:{},relative:{">":{dir:"parentNode",first:!0}," ":{dir:"parentNode"},"+":{dir:"previousSibling",first:!0},"~":{dir:"previousSibling"}},preFilter:{ATTR:function(a){return a[1]=a[1].replace(ca,da),a[3]=(a[3]||a[4]||a[5]||"").replace(ca,da),"~="===a[2]&&(a[3]=" "+a[3]+" "),a.slice(0,4)},CHILD:function(a){return a[1]=a[1].toLowerCase(),"nth"===a[1].slice(0,3)?(a[3]||ga.error(a[0]),a[4]=+(a[4]?a[5]+(a[6]||1):2*("even"===a[3]||"odd"===a[3])),a[5]=+(a[7]+a[8]||"odd"===a[3])):a[3]&&ga.error(a[0]),a},PSEUDO:function(a){var b,c=!a[6]&&a[2];return X.CHILD.test(a[0])?null:(a[3]?a[2]=a[4]||a[5]||"":c&&V.test(c)&&(b=g(c,!0))&&(b=c.indexOf(")",c.length-b)-c.length)&&(a[0]=a[0].slice(0,b),a[2]=c.slice(0,b)),a.slice(0,3))}},filter:{TAG:function(a){var b=a.replace(ca,da).toLowerCase();return"*"===a?function(){return!0}:function(a){return a.nodeName&&a.nodeName.toLowerCase()===b}},CLASS:function(a){var b=y[a+" "];return b||(b=new RegExp("(^|"+L+")"+a+"("+L+"|$)"))&&y(a,function(a){return b.test("string"==typeof a.className&&a.className||"undefined"!=typeof a.getAttribute&&a.getAttribute("class")||"")})},ATTR:function(a,b,c){return function(d){var e=ga.attr(d,a);return null==e?"!="===b:b?(e+="","="===b?e===c:"!="===b?e!==c:"^="===b?c&&0===e.indexOf(c):"*="===b?c&&e.indexOf(c)>-1:"$="===b?c&&e.slice(-c.length)===c:"~="===b?(" "+e.replace(Q," ")+" ").indexOf(c)>-1:"|="===b?e===c||e.slice(0,c.length+1)===c+"-":!1):!0}},CHILD:function(a,b,c,d,e){var f="nth"!==a.slice(0,3),g="last"!==a.slice(-4),h="of-type"===b;return 1===d&&0===e?function(a){return!!a.parentNode}:function(b,c,i){var j,k,l,m,n,o,p=f!==g?"nextSibling":"previousSibling",q=b.parentNode,r=h&&b.nodeName.toLowerCase(),s=!i&&!h;if(q){if(f){while(p){l=b;while(l=l[p])if(h?l.nodeName.toLowerCase()===r:1===l.nodeType)return!1;o=p="only"===a&&!o&&"nextSibling"}return!0}if(o=[g?q.firstChild:q.lastChild],g&&s){k=q[u]||(q[u]={}),j=k[a]||[],n=j[0]===w&&j[1],m=j[0]===w&&j[2],l=n&&q.childNodes[n];while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if(1===l.nodeType&&++m&&l===b){k[a]=[w,n,m];break}}else if(s&&(j=(b[u]||(b[u]={}))[a])&&j[0]===w)m=j[1];else while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if((h?l.nodeName.toLowerCase()===r:1===l.nodeType)&&++m&&(s&&((l[u]||(l[u]={}))[a]=[w,m]),l===b))break;return m-=e,m===d||m%d===0&&m/d>=0}}},PSEUDO:function(a,b){var c,e=d.pseudos[a]||d.setFilters[a.toLowerCase()]||ga.error("unsupported pseudo: "+a);return e[u]?e(b):e.length>1?(c=[a,a,"",b],d.setFilters.hasOwnProperty(a.toLowerCase())?ia(function(a,c){var d,f=e(a,b),g=f.length;while(g--)d=J(a,f[g]),a[d]=!(c[d]=f[g])}):function(a){return e(a,0,c)}):e}},pseudos:{not:ia(function(a){var b=[],c=[],d=h(a.replace(R,"$1"));return d[u]?ia(function(a,b,c,e){var f,g=d(a,null,e,[]),h=a.length;while(h--)(f=g[h])&&(a[h]=!(b[h]=f))}):function(a,e,f){return b[0]=a,d(b,null,f,c),b[0]=null,!c.pop()}}),has:ia(function(a){return function(b){return ga(a,b).length>0}}),contains:ia(function(a){return a=a.replace(ca,da),function(b){return(b.textContent||b.innerText||e(b)).indexOf(a)>-1}}),lang:ia(function(a){return W.test(a||"")||ga.error("unsupported lang: "+a),a=a.replace(ca,da).toLowerCase(),function(b){var c;do if(c=p?b.lang:b.getAttribute("xml:lang")||b.getAttribute("lang"))return c=c.toLowerCase(),c===a||0===c.indexOf(a+"-");while((b=b.parentNode)&&1===b.nodeType);return!1}}),target:function(b){var c=a.location&&a.location.hash;return c&&c.slice(1)===b.id},root:function(a){return a===o},focus:function(a){return a===n.activeElement&&(!n.hasFocus||n.hasFocus())&&!!(a.type||a.href||~a.tabIndex)},enabled:function(a){return a.disabled===!1},disabled:function(a){return a.disabled===!0},checked:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&!!a.checked||"option"===b&&!!a.selected},selected:function(a){return a.parentNode&&a.parentNode.selectedIndex,a.selected===!0},empty:function(a){for(a=a.firstChild;a;a=a.nextSibling)if(a.nodeType<6)return!1;return!0},parent:function(a){return!d.pseudos.empty(a)},header:function(a){return Z.test(a.nodeName)},input:function(a){return Y.test(a.nodeName)},button:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&"button"===a.type||"button"===b},text:function(a){var b;return"input"===a.nodeName.toLowerCase()&&"text"===a.type&&(null==(b=a.getAttribute("type"))||"text"===b.toLowerCase())},first:oa(function(){return[0]}),last:oa(function(a,b){return[b-1]}),eq:oa(function(a,b,c){return[0>c?c+b:c]}),even:oa(function(a,b){for(var c=0;b>c;c+=2)a.push(c);return a}),odd:oa(function(a,b){for(var c=1;b>c;c+=2)a.push(c);return a}),lt:oa(function(a,b,c){for(var d=0>c?c+b:c;--d>=0;)a.push(d);return a}),gt:oa(function(a,b,c){for(var d=0>c?c+b:c;++d<b;)a.push(d);return a})}},d.pseudos.nth=d.pseudos.eq;for(b in{radio:!0,checkbox:!0,file:!0,password:!0,image:!0})d.pseudos[b]=ma(b);for(b in{submit:!0,reset:!0})d.pseudos[b]=na(b);function qa(){}qa.prototype=d.filters=d.pseudos,d.setFilters=new qa,g=ga.tokenize=function(a,b){var c,e,f,g,h,i,j,k=z[a+" "];if(k)return b?0:k.slice(0);h=a,i=[],j=d.preFilter;while(h){(!c||(e=S.exec(h)))&&(e&&(h=h.slice(e[0].length)||h),i.push(f=[])),c=!1,(e=T.exec(h))&&(c=e.shift(),f.push({value:c,type:e[0].replace(R," ")}),h=h.slice(c.length));for(g in d.filter)!(e=X[g].exec(h))||j[g]&&!(e=j[g](e))||(c=e.shift(),f.push({value:c,type:g,matches:e}),h=h.slice(c.length));if(!c)break}return b?h.length:h?ga.error(a):z(a,i).slice(0)};function ra(a){for(var b=0,c=a.length,d="";c>b;b++)d+=a[b].value;return d}function sa(a,b,c){var d=b.dir,e=c&&"parentNode"===d,f=x++;return b.first?function(b,c,f){while(b=b[d])if(1===b.nodeType||e)return a(b,c,f)}:function(b,c,g){var h,i,j=[w,f];if(g){while(b=b[d])if((1===b.nodeType||e)&&a(b,c,g))return!0}else while(b=b[d])if(1===b.nodeType||e){if(i=b[u]||(b[u]={}),(h=i[d])&&h[0]===w&&h[1]===f)return j[2]=h[2];if(i[d]=j,j[2]=a(b,c,g))return!0}}}function ta(a){return a.length>1?function(b,c,d){var e=a.length;while(e--)if(!a[e](b,c,d))return!1;return!0}:a[0]}function ua(a,b,c){for(var d=0,e=b.length;e>d;d++)ga(a,b[d],c);return c}function va(a,b,c,d,e){for(var f,g=[],h=0,i=a.length,j=null!=b;i>h;h++)(f=a[h])&&(!c||c(f,d,e))&&(g.push(f),j&&b.push(h));return g}function wa(a,b,c,d,e,f){return d&&!d[u]&&(d=wa(d)),e&&!e[u]&&(e=wa(e,f)),ia(function(f,g,h,i){var j,k,l,m=[],n=[],o=g.length,p=f||ua(b||"*",h.nodeType?[h]:h,[]),q=!a||!f&&b?p:va(p,m,a,h,i),r=c?e||(f?a:o||d)?[]:g:q;if(c&&c(q,r,h,i),d){j=va(r,n),d(j,[],h,i),k=j.length;while(k--)(l=j[k])&&(r[n[k]]=!(q[n[k]]=l))}if(f){if(e||a){if(e){j=[],k=r.length;while(k--)(l=r[k])&&j.push(q[k]=l);e(null,r=[],j,i)}k=r.length;while(k--)(l=r[k])&&(j=e?J(f,l):m[k])>-1&&(f[j]=!(g[j]=l))}}else r=va(r===g?r.splice(o,r.length):r),e?e(null,g,r,i):H.apply(g,r)})}function xa(a){for(var b,c,e,f=a.length,g=d.relative[a[0].type],h=g||d.relative[" "],i=g?1:0,k=sa(function(a){return a===b},h,!0),l=sa(function(a){return J(b,a)>-1},h,!0),m=[function(a,c,d){var e=!g&&(d||c!==j)||((b=c).nodeType?k(a,c,d):l(a,c,d));return b=null,e}];f>i;i++)if(c=d.relative[a[i].type])m=[sa(ta(m),c)];else{if(c=d.filter[a[i].type].apply(null,a[i].matches),c[u]){for(e=++i;f>e;e++)if(d.relative[a[e].type])break;return wa(i>1&&ta(m),i>1&&ra(a.slice(0,i-1).concat({value:" "===a[i-2].type?"*":""})).replace(R,"$1"),c,e>i&&xa(a.slice(i,e)),f>e&&xa(a=a.slice(e)),f>e&&ra(a))}m.push(c)}return ta(m)}function ya(a,b){var c=b.length>0,e=a.length>0,f=function(f,g,h,i,k){var l,m,o,p=0,q="0",r=f&&[],s=[],t=j,u=f||e&&d.find.TAG("*",k),v=w+=null==t?1:Math.random()||.1,x=u.length;for(k&&(j=g!==n&&g);q!==x&&null!=(l=u[q]);q++){if(e&&l){m=0;while(o=a[m++])if(o(l,g,h)){i.push(l);break}k&&(w=v)}c&&((l=!o&&l)&&p--,f&&r.push(l))}if(p+=q,c&&q!==p){m=0;while(o=b[m++])o(r,s,g,h);if(f){if(p>0)while(q--)r[q]||s[q]||(s[q]=F.call(i));s=va(s)}H.apply(i,s),k&&!f&&s.length>0&&p+b.length>1&&ga.uniqueSort(i)}return k&&(w=v,j=t),r};return c?ia(f):f}return h=ga.compile=function(a,b){var c,d=[],e=[],f=A[a+" "];if(!f){b||(b=g(a)),c=b.length;while(c--)f=xa(b[c]),f[u]?d.push(f):e.push(f);f=A(a,ya(e,d)),f.selector=a}return f},i=ga.select=function(a,b,e,f){var i,j,k,l,m,n="function"==typeof a&&a,o=!f&&g(a=n.selector||a);if(e=e||[],1===o.length){if(j=o[0]=o[0].slice(0),j.length>2&&"ID"===(k=j[0]).type&&c.getById&&9===b.nodeType&&p&&d.relative[j[1].type]){if(b=(d.find.ID(k.matches[0].replace(ca,da),b)||[])[0],!b)return e;n&&(b=b.parentNode),a=a.slice(j.shift().value.length)}i=X.needsContext.test(a)?0:j.length;while(i--){if(k=j[i],d.relative[l=k.type])break;if((m=d.find[l])&&(f=m(k.matches[0].replace(ca,da),aa.test(j[0].type)&&pa(b.parentNode)||b))){if(j.splice(i,1),a=f.length&&ra(j),!a)return H.apply(e,f),e;break}}}return(n||h(a,o))(f,b,!p,e,aa.test(a)&&pa(b.parentNode)||b),e},c.sortStable=u.split("").sort(B).join("")===u,c.detectDuplicates=!!l,m(),c.sortDetached=ja(function(a){return 1&a.compareDocumentPosition(n.createElement("div"))}),ja(function(a){return a.innerHTML="<a href='#'></a>","#"===a.firstChild.getAttribute("href")})||ka("type|href|height|width",function(a,b,c){return c?void 0:a.getAttribute(b,"type"===b.toLowerCase()?1:2)}),c.attributes&&ja(function(a){return a.innerHTML="<input/>",a.firstChild.setAttribute("value",""),""===a.firstChild.getAttribute("value")})||ka("value",function(a,b,c){return c||"input"!==a.nodeName.toLowerCase()?void 0:a.defaultValue}),ja(function(a){return null==a.getAttribute("disabled")})||ka(K,function(a,b,c){var d;return c?void 0:a[b]===!0?b.toLowerCase():(d=a.getAttributeNode(b))&&d.specified?d.value:null}),ga}(a);m.find=s,m.expr=s.selectors,m.expr[":"]=m.expr.pseudos,m.unique=s.uniqueSort,m.text=s.getText,m.isXMLDoc=s.isXML,m.contains=s.contains;var t=m.expr.match.needsContext,u=/^<(\w+)\s*\/?>(?:<\/\1>|)$/,v=/^.[^:#\[\.,]*$/;function w(a,b,c){if(m.isFunction(b))return m.grep(a,function(a,d){return!!b.call(a,d,a)!==c});if(b.nodeType)return m.grep(a,function(a){return a===b!==c});if("string"==typeof b){if(v.test(b))return m.filter(b,a,c);b=m.filter(b,a)}return m.grep(a,function(a){return m.inArray(a,b)>=0!==c})}m.filter=function(a,b,c){var d=b[0];return c&&(a=":not("+a+")"),1===b.length&&1===d.nodeType?m.find.matchesSelector(d,a)?[d]:[]:m.find.matches(a,m.grep(b,function(a){return 1===a.nodeType}))},m.fn.extend({find:function(a){var b,c=[],d=this,e=d.length;if("string"!=typeof a)return this.pushStack(m(a).filter(function(){for(b=0;e>b;b++)if(m.contains(d[b],this))return!0}));for(b=0;e>b;b++)m.find(a,d[b],c);return c=this.pushStack(e>1?m.unique(c):c),c.selector=this.selector?this.selector+" "+a:a,c},filter:function(a){return this.pushStack(w(this,a||[],!1))},not:function(a){return this.pushStack(w(this,a||[],!0))},is:function(a){return!!w(this,"string"==typeof a&&t.test(a)?m(a):a||[],!1).length}});var x,y=a.document,z=/^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]*))$/,A=m.fn.init=function(a,b){var c,d;if(!a)return this;if("string"==typeof a){if(c="<"===a.charAt(0)&&">"===a.charAt(a.length-1)&&a.length>=3?[null,a,null]:z.exec(a),!c||!c[1]&&b)return!b||b.jquery?(b||x).find(a):this.constructor(b).find(a);if(c[1]){if(b=b instanceof m?b[0]:b,m.merge(this,m.parseHTML(c[1],b&&b.nodeType?b.ownerDocument||b:y,!0)),u.test(c[1])&&m.isPlainObject(b))for(c in b)m.isFunction(this[c])?this[c](b[c]):this.attr(c,b[c]);return this}if(d=y.getElementById(c[2]),d&&d.parentNode){if(d.id!==c[2])return x.find(a);this.length=1,this[0]=d}return this.context=y,this.selector=a,this}return a.nodeType?(this.context=this[0]=a,this.length=1,this):m.isFunction(a)?"undefined"!=typeof x.ready?x.ready(a):a(m):(void 0!==a.selector&&(this.selector=a.selector,this.context=a.context),m.makeArray(a,this))};A.prototype=m.fn,x=m(y);var B=/^(?:parents|prev(?:Until|All))/,C={children:!0,contents:!0,next:!0,prev:!0};m.extend({dir:function(a,b,c){var d=[],e=a[b];while(e&&9!==e.nodeType&&(void 0===c||1!==e.nodeType||!m(e).is(c)))1===e.nodeType&&d.push(e),e=e[b];return d},sibling:function(a,b){for(var c=[];a;a=a.nextSibling)1===a.nodeType&&a!==b&&c.push(a);return c}}),m.fn.extend({has:function(a){var b,c=m(a,this),d=c.length;return this.filter(function(){for(b=0;d>b;b++)if(m.contains(this,c[b]))return!0})},closest:function(a,b){for(var c,d=0,e=this.length,f=[],g=t.test(a)||"string"!=typeof a?m(a,b||this.context):0;e>d;d++)for(c=this[d];c&&c!==b;c=c.parentNode)if(c.nodeType<11&&(g?g.index(c)>-1:1===c.nodeType&&m.find.matchesSelector(c,a))){f.push(c);break}return this.pushStack(f.length>1?m.unique(f):f)},index:function(a){return a?"string"==typeof a?m.inArray(this[0],m(a)):m.inArray(a.jquery?a[0]:a,this):this[0]&&this[0].parentNode?this.first().prevAll().length:-1},add:function(a,b){return this.pushStack(m.unique(m.merge(this.get(),m(a,b))))},addBack:function(a){return this.add(null==a?this.prevObject:this.prevObject.filter(a))}});function D(a,b){do a=a[b];while(a&&1!==a.nodeType);return a}m.each({parent:function(a){var b=a.parentNode;return b&&11!==b.nodeType?b:null},parents:function(a){return m.dir(a,"parentNode")},parentsUntil:function(a,b,c){return m.dir(a,"parentNode",c)},next:function(a){return D(a,"nextSibling")},prev:function(a){return D(a,"previousSibling")},nextAll:function(a){return m.dir(a,"nextSibling")},prevAll:function(a){return m.dir(a,"previousSibling")},nextUntil:function(a,b,c){return m.dir(a,"nextSibling",c)},prevUntil:function(a,b,c){return m.dir(a,"previousSibling",c)},siblings:function(a){return m.sibling((a.parentNode||{}).firstChild,a)},children:function(a){return m.sibling(a.firstChild)},contents:function(a){return m.nodeName(a,"iframe")?a.contentDocument||a.contentWindow.document:m.merge([],a.childNodes)}},function(a,b){m.fn[a]=function(c,d){var e=m.map(this,b,c);return"Until"!==a.slice(-5)&&(d=c),d&&"string"==typeof d&&(e=m.filter(d,e)),this.length>1&&(C[a]||(e=m.unique(e)),B.test(a)&&(e=e.reverse())),this.pushStack(e)}});var E=/\S+/g,F={};function G(a){var b=F[a]={};return m.each(a.match(E)||[],function(a,c){b[c]=!0}),b}m.Callbacks=function(a){a="string"==typeof a?F[a]||G(a):m.extend({},a);var b,c,d,e,f,g,h=[],i=!a.once&&[],j=function(l){for(c=a.memory&&l,d=!0,f=g||0,g=0,e=h.length,b=!0;h&&e>f;f++)if(h[f].apply(l[0],l[1])===!1&&a.stopOnFalse){c=!1;break}b=!1,h&&(i?i.length&&j(i.shift()):c?h=[]:k.disable())},k={add:function(){if(h){var d=h.length;!function f(b){m.each(b,function(b,c){var d=m.type(c);"function"===d?a.unique&&k.has(c)||h.push(c):c&&c.length&&"string"!==d&&f(c)})}(arguments),b?e=h.length:c&&(g=d,j(c))}return this},remove:function(){return h&&m.each(arguments,function(a,c){var d;while((d=m.inArray(c,h,d))>-1)h.splice(d,1),b&&(e>=d&&e--,f>=d&&f--)}),this},has:function(a){return a?m.inArray(a,h)>-1:!(!h||!h.length)},empty:function(){return h=[],e=0,this},disable:function(){return h=i=c=void 0,this},disabled:function(){return!h},lock:function(){return i=void 0,c||k.disable(),this},locked:function(){return!i},fireWith:function(a,c){return!h||d&&!i||(c=c||[],c=[a,c.slice?c.slice():c],b?i.push(c):j(c)),this},fire:function(){return k.fireWith(this,arguments),this},fired:function(){return!!d}};return k},m.extend({Deferred:function(a){var b=[["resolve","done",m.Callbacks("once memory"),"resolved"],["reject","fail",m.Callbacks("once memory"),"rejected"],["notify","progress",m.Callbacks("memory")]],c="pending",d={state:function(){return c},always:function(){return e.done(arguments).fail(arguments),this},then:function(){var a=arguments;return m.Deferred(function(c){m.each(b,function(b,f){var g=m.isFunction(a[b])&&a[b];e[f[1]](function(){var a=g&&g.apply(this,arguments);a&&m.isFunction(a.promise)?a.promise().done(c.resolve).fail(c.reject).progress(c.notify):c[f[0]+"With"](this===d?c.promise():this,g?[a]:arguments)})}),a=null}).promise()},promise:function(a){return null!=a?m.extend(a,d):d}},e={};return d.pipe=d.then,m.each(b,function(a,f){var g=f[2],h=f[3];d[f[1]]=g.add,h&&g.add(function(){c=h},b[1^a][2].disable,b[2][2].lock),e[f[0]]=function(){return e[f[0]+"With"](this===e?d:this,arguments),this},e[f[0]+"With"]=g.fireWith}),d.promise(e),a&&a.call(e,e),e},when:function(a){var b=0,c=d.call(arguments),e=c.length,f=1!==e||a&&m.isFunction(a.promise)?e:0,g=1===f?a:m.Deferred(),h=function(a,b,c){return function(e){b[a]=this,c[a]=arguments.length>1?d.call(arguments):e,c===i?g.notifyWith(b,c):--f||g.resolveWith(b,c)}},i,j,k;if(e>1)for(i=new Array(e),j=new Array(e),k=new Array(e);e>b;b++)c[b]&&m.isFunction(c[b].promise)?c[b].promise().done(h(b,k,c)).fail(g.reject).progress(h(b,j,i)):--f;return f||g.resolveWith(k,c),g.promise()}});var H;m.fn.ready=function(a){return m.ready.promise().done(a),this},m.extend({isReady:!1,readyWait:1,holdReady:function(a){a?m.readyWait++:m.ready(!0)},ready:function(a){if(a===!0?!--m.readyWait:!m.isReady){if(!y.body)return setTimeout(m.ready);m.isReady=!0,a!==!0&&--m.readyWait>0||(H.resolveWith(y,[m]),m.fn.triggerHandler&&(m(y).triggerHandler("ready"),m(y).off("ready")))}}});function I(){y.addEventListener?(y.removeEventListener("DOMContentLoaded",J,!1),a.removeEventListener("load",J,!1)):(y.detachEvent("onreadystatechange",J),a.detachEvent("onload",J))}function J(){(y.addEventListener||"load"===event.type||"complete"===y.readyState)&&(I(),m.ready())}m.ready.promise=function(b){if(!H)if(H=m.Deferred(),"complete"===y.readyState)setTimeout(m.ready);else if(y.addEventListener)y.addEventListener("DOMContentLoaded",J,!1),a.addEventListener("load",J,!1);else{y.attachEvent("onreadystatechange",J),a.attachEvent("onload",J);var c=!1;try{c=null==a.frameElement&&y.documentElement}catch(d){}c&&c.doScroll&&!function e(){if(!m.isReady){try{c.doScroll("left")}catch(a){return setTimeout(e,50)}I(),m.ready()}}()}return H.promise(b)};var K="undefined",L;for(L in m(k))break;k.ownLast="0"!==L,k.inlineBlockNeedsLayout=!1,m(function(){var a,b,c,d;c=y.getElementsByTagName("body")[0],c&&c.style&&(b=y.createElement("div"),d=y.createElement("div"),d.style.cssText="position:absolute;border:0;width:0;height:0;top:0;left:-9999px",c.appendChild(d).appendChild(b),typeof b.style.zoom!==K&&(b.style.cssText="display:inline;margin:0;border:0;padding:1px;width:1px;zoom:1",k.inlineBlockNeedsLayout=a=3===b.offsetWidth,a&&(c.style.zoom=1)),c.removeChild(d))}),function(){var a=y.createElement("div");if(null==k.deleteExpando){k.deleteExpando=!0;try{delete a.test}catch(b){k.deleteExpando=!1}}a=null}(),m.acceptData=function(a){var b=m.noData[(a.nodeName+" ").toLowerCase()],c=+a.nodeType||1;return 1!==c&&9!==c?!1:!b||b!==!0&&a.getAttribute("classid")===b};var M=/^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,N=/([A-Z])/g;function O(a,b,c){if(void 0===c&&1===a.nodeType){var d="data-"+b.replace(N,"-$1").toLowerCase();if(c=a.getAttribute(d),"string"==typeof c){try{c="true"===c?!0:"false"===c?!1:"null"===c?null:+c+""===c?+c:M.test(c)?m.parseJSON(c):c}catch(e){}m.data(a,b,c)}else c=void 0}return c}function P(a){var b;for(b in a)if(("data"!==b||!m.isEmptyObject(a[b]))&&"toJSON"!==b)return!1;
@@ -305,261 +305,341 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Libraries</h1>
+<h1 class="title toc-ignore">Reading Tabular Data into DataFrames</h1>
 
 </div>
 
 
-<div id="most-of-the-power-of-a-programming-language-is-in-its-libraries." class="section level2">
-<h2>Most of the power of a programming language is in its libraries.</h2>
+<script>$(document).ready(function() {
+
+  $chunks = $('.fold');
+
+  $chunks.each(function () {
+
+    // add button to source code chunks
+    if ( $(this).hasClass('s') ) {
+      $('pre.r', this).prepend("<div class=\"showopt\">Code</div><br style=\"line-height:22px;\"/>");
+      $('pre.r', this).children('code').attr('class', 'folded');
+    }
+    
+    // add button to source code chunks for python
+    $('pre:not(.r)', this).has('code').prepend("<div class=\"showopt\">Code</div><br style=\"line-height:22px;\"/>");
+      $('pre:not(.r)', this).children('code:not(r)').addClass('folded');
+
+    // add button to output chunks
+    if ( $(this).hasClass('o') ) {
+      $('pre:not(.r)', this).has('code').prepend("<div class=\"showopt\">Output</div><br style=\"line-height:22px;\"/>");
+      $('pre:not(.r)', this).children('code:not(r)').addClass('folded');
+
+      // add button to plots
+      // $(this).find('img').wrap('<pre class=\"plot\"></pre>');
+      // $('pre.plot', this).prepend("<div class=\"showopt\">Plot</div><br style=\"line-height:22px;\"/>");
+      // $('pre.plot', this).children('img').addClass('folded');
+
+    }
+  });
+
+  // hide all chunks when document is loaded
+  $('.folded').css('display', 'none')
+
+  // function to toggle the visibility
+  $('.showopt').click(function() {
+    var label = $(this).html();
+    if (label.indexOf("Code") === 0) {
+      $(this).html(label.replace("Code", " Hide"));
+    } else if (label.indexOf("Hide") === 1) {
+      $(this).html(label.replace(" Hide", "Code"));
+    } else if (label.indexOf("Output") === 0) {
+      $(this).html(label.replace("Output", "Hide"));
+    } else {
+      $(this).html(label.replace("Hide", "Output"));
+    }
+    
+    $(this).siblings('code, img').slideToggle('fast', 'swing');
+  });
+});</script>
+<p><style type="text/css">.showopt {background-color: #FFFFFF;color: #000000; width: 50px;height: 20px;border:1px solid #A9A9A9; text-align: center;vertical-align: middle !important;float: right;font-family: sans-serif;}.showopt:hover {background-color: #DADADA;color: #000000;}pre.plot {background-color: white !important;}</style></p>
+<div id="use-the-pandas-library-to-do-statistics-on-tabular-data." class="section level2">
+<h2>Use the Pandas library to do statistics on tabular data.</h2>
 <ul>
-<li>A <em>library</em> is a collection of files (called <em>modules</em>) that contains functions for use by other programs.
+<li>Pandas is a widely-used Python library for statistics, particularly on tabular data.</li>
+<li>Borrows many features from R’s dataframes.
 <ul>
-<li>May also contain data values (e.g., numerical constants) and other things.</li>
-<li>Library’s contents are supposed to be related, but there’s no way to enforce that.</li>
+<li>A 2-dimenstional table whose columns have names and potentially have different data types.</li>
 </ul></li>
-<li>The Python <a href="https://docs.python.org/3/library/">standard library</a> is an extensive suite of modules that comes with Python itself.</li>
-<li>Many additional libraries are available from <a href="https://pypi.python.org/pypi/">PyPI</a> (the Python Package Index).</li>
-<li>We will see later how to write new libraries.</li>
+<li>Load it with <code>import pandas</code>.</li>
+<li>Read a Comma Separate Values (CSV) data file with <code>pandas.read_csv</code>.
+<ul>
+<li>Argument is the name of the file to be read.</li>
+<li>Assign result to a variable to store the data that was read.</li>
+</ul></li>
+</ul>
+<pre><code>import pandas
+
+data = pandas.read_csv('data/gapminder_gdp_oceania.csv')
+print(data)</code></pre>
+<pre><code>       country  gdpPercap_1952  gdpPercap_1957  gdpPercap_1962  \
+0    Australia     10039.59564     10949.64959     12217.22686
+1  New Zealand     10556.57566     12247.39532     13175.67800
+
+   gdpPercap_1967  gdpPercap_1972  gdpPercap_1977  gdpPercap_1982  \
+0     14526.12465     16788.62948     18334.19751     19477.00928
+1     14463.91893     16046.03728     16233.71770     17632.41040
+
+   gdpPercap_1987  gdpPercap_1992  gdpPercap_1997  gdpPercap_2002  \
+0     21888.88903     23424.76683     26997.93657     30687.75473
+1     19007.19129     18363.32494     21050.41377     23189.80135
+
+   gdpPercap_2007
+0     34435.36744
+1     25185.00911</code></pre>
+<ul>
+<li>The columns in a dataframe are the observed variables, and the rows are the observations.</li>
+<li>Pandas uses backslash <code>\</code> to show wrapped lines when output is too wide to fit the screen.</li>
 </ul>
 <blockquote>
-<h2 id="libraries-and-modules">Libraries and modules</h2>
-<p>A library is a collection of modules, but the terms are often used interchangeably, especially since many libraries only consist of a single module, so don’t worry if you mix them. {: .callout}</p>
+<h2 id="file-not-found">File Not Found</h2>
+<p>Our lessons store their data files in a <code>data</code> sub-directory, which is why the path to the file is <code>data/gapminder_gdp_oceania.csv</code>. If you forget to include <code>data/</code>, or if you include it but your copy of the file is somewhere else, you will get a <a href="%7B%7B%20page.root%20%7D%7D/05-error-messages/">runtime error</a> that ends with a line like this:</p>
+<pre><code>OSError: File b'gapminder_gdp_oceania.csv' does not exist</code></pre>
+<p>{: .error} {: .callout}</p>
 </blockquote>
 </div>
-<div id="a-program-must-import-a-library-module-before-using-it." class="section level2">
-<h2>A program must import a library module before using it.</h2>
+<div id="use-index_col-to-specify-that-a-columns-values-should-be-used-as-row-headings." class="section level2">
+<h2>Use <code>index_col</code> to specify that a column’s values should be used as row headings.</h2>
 <ul>
-<li>Use <code>import</code> to load a library module into a program’s memory.</li>
-<li>Then refer to things from the module as <code>module_name.thing_name</code>.
-<ul>
-<li>Python uses <code>.</code> to mean “part of”.</li>
-</ul></li>
-<li>Using <code>math</code>, one of the modules in the standard library:</li>
+<li>Row headings are numbers (0 and 1 in this case).</li>
+<li>Really want to index by country.</li>
+<li>Pass the name of the column to <code>read_csv</code> as its <code>index_col</code> parameter to do this.</li>
 </ul>
-<pre><code>import math
+<pre><code>data = pandas.read_csv('data/gapminder_gdp_oceania.csv', index_col='country')
+print(data)</code></pre>
+<pre><code>             gdpPercap_1952  gdpPercap_1957  gdpPercap_1962  gdpPercap_1967  \
+country
+Australia       10039.59564     10949.64959     12217.22686     14526.12465
+New Zealand     10556.57566     12247.39532     13175.67800     14463.91893
 
-print('pi is', math.pi)
-print('cos(pi) is', math.cos(math.pi))</code></pre>
-<pre><code>pi is 3.141592653589793
-cos(pi) is -1.0</code></pre>
+             gdpPercap_1972  gdpPercap_1977  gdpPercap_1982  gdpPercap_1987  \
+country
+Australia       16788.62948     18334.19751     19477.00928     21888.88903
+New Zealand     16046.03728     16233.71770     17632.41040     19007.19129
+
+             gdpPercap_1992  gdpPercap_1997  gdpPercap_2002  gdpPercap_2007
+country
+Australia       23424.76683     26997.93657     30687.75473     34435.36744
+New Zealand     18363.32494     21050.41377     23189.80135     25185.00911</code></pre>
+</div>
+<div id="use-dataframe.info-to-find-out-more-about-a-dataframe." class="section level2">
+<h2>Use <code>DataFrame.info</code> to find out more about a dataframe.</h2>
+<pre><code>data.info()</code></pre>
+<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+Index: 2 entries, Australia to New Zealand
+Data columns (total 12 columns):
+gdpPercap_1952    2 non-null float64
+gdpPercap_1957    2 non-null float64
+gdpPercap_1962    2 non-null float64
+gdpPercap_1967    2 non-null float64
+gdpPercap_1972    2 non-null float64
+gdpPercap_1977    2 non-null float64
+gdpPercap_1982    2 non-null float64
+gdpPercap_1987    2 non-null float64
+gdpPercap_1992    2 non-null float64
+gdpPercap_1997    2 non-null float64
+gdpPercap_2002    2 non-null float64
+gdpPercap_2007    2 non-null float64
+dtypes: float64(12)
+memory usage: 208.0+ bytes</code></pre>
 <ul>
-<li>Have to refer to each item with the module’s name.
+<li>This is a <code>DataFrame</code></li>
+<li>Two rows named <code>'Australia'</code> and <code>'New Zealand'</code></li>
+<li>Twelve columns, each of which has two actual 64-bit floating point values.
 <ul>
-<li><code>math.cos(pi)</code> won’t work: the reference to <code>pi</code> doesn’t somehow “inherit” the function’s reference to <code>math</code>.</li>
+<li>We will talk later about null values, which are used to represent missing observations.</li>
 </ul></li>
+<li>Uses 208 bytes of memory.</li>
 </ul>
 </div>
-<div id="use-help-to-learn-about-the-contents-of-a-library-module." class="section level2">
-<h2>Use <code>help</code> to learn about the contents of a library module.</h2>
+<div id="the-dataframe.columns-variable-stores-information-about-the-dataframes-columns." class="section level2">
+<h2>The <code>DataFrame.columns</code> variable stores information about the dataframe’s columns.</h2>
 <ul>
-<li>Works just like help for a function.</li>
-</ul>
-<pre><code>help(math)</code></pre>
-<pre><code>Help on module math:
-
-NAME
-    math
-
-MODULE REFERENCE
-    http://docs.python.org/3.5/library/math
-
-    The following documentation is automatically generated from the Python
-    source files.  It may be incomplete, incorrect or include features that
-    are considered implementation detail and may vary between Python
-    implementations.  When in doubt, consult the module reference at the
-    location listed above.
-
-DESCRIPTION
-    This module is always available.  It provides access to the
-    mathematical functions defined by the C standard.
-
-FUNCTIONS
-    acos(...)
-        acos(x)
-
-        Return the arc cosine (measured in radians) of x.
-⋮ ⋮ ⋮</code></pre>
-</div>
-<div id="import-specific-items-from-a-library-module-to-shorten-programs." class="section level2">
-<h2>Import specific items from a library module to shorten programs.</h2>
+<li>Note that this is data, <em>not</em> a method.
 <ul>
-<li>Use <code>from ... import ...</code> to load only specific items from a library module.</li>
-<li>Then refer to them directly without library name as prefix.</li>
-</ul>
-<pre><code>from math import cos, pi
-
-print('cos(pi) is', cos(pi))</code></pre>
-<pre><code>cos(pi) is -1.0</code></pre>
-</div>
-<div id="create-an-alias-for-a-library-module-when-importing-it-to-shorten-programs." class="section level2">
-<h2>Create an alias for a library module when importing it to shorten programs.</h2>
-<ul>
-<li>Use <code>import ... as ...</code> to give a library a short <em>alias</em> while importing it.</li>
-<li>Then refer to items in the library using that shortened name.</li>
-</ul>
-<pre><code>import math as m
-
-print('cos(pi) is', m.cos(m.pi))</code></pre>
-<pre><code>cos(pi) is -1.0</code></pre>
-<ul>
-<li>Commonly used for libraries that are frequently used or have long names.
-<ul>
-<li>E.g., <code>matplotlib</code> plotting library is often aliased as <code>mpl</code>.</li>
+<li>Like <code>math.pi</code>.</li>
+<li>So do not use <code>()</code> to try to call it.</li>
 </ul></li>
-<li>But can make programs harder to understand, since readers must learn your program’s aliases.</li>
+<li>Called a <em>member variable</em>, or just <em>member</em>.</li>
+</ul>
+<pre><code>print(data.columns)</code></pre>
+<pre><code>Index(['gdpPercap_1952', 'gdpPercap_1957', 'gdpPercap_1962', 'gdpPercap_1967',
+       'gdpPercap_1972', 'gdpPercap_1977', 'gdpPercap_1982', 'gdpPercap_1987',
+       'gdpPercap_1992', 'gdpPercap_1997', 'gdpPercap_2002', 'gdpPercap_2007'],
+      dtype='object')</code></pre>
+</div>
+<div id="use-dataframe.t-to-transpose-a-dataframe." class="section level2">
+<h2>Use <code>DataFrame.T</code> to transpose a dataframe.</h2>
+<ul>
+<li>Sometimes want to treat columns as rows and vice versa.</li>
+<li>Transpose (written <code>.T</code>) doesn’t copy the data, just changes the program’s view of it.</li>
+<li>Like <code>columns</code>, it is a member variable.</li>
+</ul>
+<pre><code>print(data.T)</code></pre>
+<pre><code>country           Australia  New Zealand
+gdpPercap_1952  10039.59564  10556.57566
+gdpPercap_1957  10949.64959  12247.39532
+gdpPercap_1962  12217.22686  13175.67800
+gdpPercap_1967  14526.12465  14463.91893
+gdpPercap_1972  16788.62948  16046.03728
+gdpPercap_1977  18334.19751  16233.71770
+gdpPercap_1982  19477.00928  17632.41040
+gdpPercap_1987  21888.88903  19007.19129
+gdpPercap_1992  23424.76683  18363.32494
+gdpPercap_1997  26997.93657  21050.41377
+gdpPercap_2002  30687.75473  23189.80135
+gdpPercap_2007  34435.36744  25185.00911</code></pre>
+</div>
+<div id="use-dataframe.describe-to-get-summary-statistics-about-data." class="section level2">
+<h2>Use <code>DataFrame.describe</code> to get summary statistics about data.</h2>
+<p>DataFrame.describe() gets the summary statistics of only the columns that have numerical data. All other columns are ignored, unless you use the argument <code>include='all'</code>. ~~<sub> print(data.describe()) </sub>~~</p>
+<pre><code>       gdpPercap_1952  gdpPercap_1957  gdpPercap_1962  gdpPercap_1967  \
+count        2.000000        2.000000        2.000000        2.000000
+mean     10298.085650    11598.522455    12696.452430    14495.021790
+std        365.560078      917.644806      677.727301       43.986086
+min      10039.595640    10949.649590    12217.226860    14463.918930
+25%      10168.840645    11274.086022    12456.839645    14479.470360
+50%      10298.085650    11598.522455    12696.452430    14495.021790
+75%      10427.330655    11922.958888    12936.065215    14510.573220
+max      10556.575660    12247.395320    13175.678000    14526.124650
+
+       gdpPercap_1972  gdpPercap_1977  gdpPercap_1982  gdpPercap_1987  \
+count         2.00000        2.000000        2.000000        2.000000
+mean      16417.33338    17283.957605    18554.709840    20448.040160
+std         525.09198     1485.263517     1304.328377     2037.668013
+min       16046.03728    16233.717700    17632.410400    19007.191290
+25%       16231.68533    16758.837652    18093.560120    19727.615725
+50%       16417.33338    17283.957605    18554.709840    20448.040160
+75%       16602.98143    17809.077557    19015.859560    21168.464595
+max       16788.62948    18334.197510    19477.009280    21888.889030
+
+       gdpPercap_1992  gdpPercap_1997  gdpPercap_2002  gdpPercap_2007
+count        2.000000        2.000000        2.000000        2.000000
+mean     20894.045885    24024.175170    26938.778040    29810.188275
+std       3578.979883     4205.533703     5301.853680     6540.991104
+min      18363.324940    21050.413770    23189.801350    25185.009110
+25%      19628.685413    22537.294470    25064.289695    27497.598692
+50%      20894.045885    24024.175170    26938.778040    29810.188275
+75%      22159.406358    25511.055870    28813.266385    32122.777857
+max      23424.766830    26997.936570    30687.754730    34435.367440</code></pre>
+<ul>
+<li>Not particularly useful with just two records, but very helpful when there are thousands.</li>
 </ul>
 <blockquote>
-<h2 id="exploring-the-math-module">Exploring the Math Module</h2>
-<ol style="list-style-type: decimal">
-<li>What function from the <code>math</code> module can you use to calculate a square root <em>without</em> using <code>sqrt</code>?</li>
-<li>Since the library contains this function, why does <code>sqrt</code> exist?</li>
-</ol>
+<h2 id="reading-other-data">Reading Other Data</h2>
+<p>Read the data in <code>gapminder_gdp_americas.csv</code> (which should be in the same directory as <code>gapminder_gdp_oceania.csv</code>) into a variable called <code>americas</code> and display its summary statistics.</p>
 <blockquote>
 <h2 id="solution">Solution</h2>
-<ol style="list-style-type: decimal">
-<li>Using <code>help(math)</code> we see that we’ve got <code>pow(x,y)</code> in addition to <code>sqrt(x)</code></li>
-<li>The <code>sqrt(x)</code> function (like much of the <code>math</code> library) has it’s origins in C’s math library. Consequently, it might be somewhat faster than <code>pow(x,y)</code>. Also, it might be more readable than <code>pow(x, 0.5)</code> when implementing equations. However, <code>sqrt(x)</code> doesn’t support negative arguments.</li>
-</ol>
+<div class="fold s">
+<p>To read in a CSV, we use <code>pandas.read_csv</code> and pass the filename ‘data/gapminder_gdp_americas.csv’ to it. We also once again pass the column name ‘country’ to the parameter <code>index_col</code> in order to index by country:</p>
+<pre><code>americas = pandas.read_csv('data/gapminder_gdp_americas.csv', index_col='country')</code></pre>
+</div>
 </blockquote>
 </blockquote>
 <blockquote>
-<h2 id="locating-the-right-module">Locating the Right Module</h2>
-<p>You want to select a random character from a string:</p>
-<pre><code>bases = 'ACTTGCTTGAC'</code></pre>
+<h2 id="inspecting-data.">Inspecting Data.</h2>
+<p>After reading the data for the Americas, use <code>help(americas.head)</code> and <code>help(americas.tail)</code> to find out what <code>DataFrame.head</code> and <code>DataFrame.tail</code> do.</p>
 <ol style="list-style-type: decimal">
-<li>Which <a href="https://docs.python.org/3/library/">standard library</a> module could help you?</li>
-<li>Which function would you select from that module? Are there alternatives?</li>
-<li>Try to write a program that uses the function.</li>
+<li>What method call will display the first three rows of this data?</li>
+<li>What method call will display the last three columns of this data? (Hint: you may need to change your view of the data.)</li>
 </ol>
 <blockquote>
 <h2 id="solution-1">Solution</h2>
-<p>The <a href="randommod">random module</a> seems like it could help you.</p>
-<p>The string has 11 characters, each having a positional index from 0 to 10. You could use <code>random.randrange</code> function (or the alias <code>random.randint</code> if you find that easier to remember) to get a random integer between 0 and 10, and then pick out the character at that position:</p>
-<pre><code>from random import randrange
+<div class="fold s">
+<ol style="list-style-type: decimal">
+<li>We can check out the first five rows of <code>americas</code> by executing <code>americas.head()</code> (allowing us to view the head of the DataFrame). We can specify the number of rows we wish to see by specifying the parameter <code>n</code> in our call to <code>americas.head()</code>. To view the first three rows, execute:</li>
+</ol>
+<pre><code>americas.head(n=3)</code></pre>
+<p>The output is then</p>
+<pre><code>         continent  gdpPercap_1952  gdpPercap_1957  gdpPercap_1962  \
+country                                                               
+Argentina  Americas     5911.315053     6856.856212     7133.166023   
+Bolivia    Americas     2677.326347     2127.686326     2180.972546   
+Brazil     Americas     2108.944355     2487.365989     3336.585802   
 
-random_index = randrange(len(bases))
-print(bases[random_index])</code></pre>
-<p>or more compactly:</p>
-<pre><code>from random import randrange
+          gdpPercap_1967  gdpPercap_1972  gdpPercap_1977  gdpPercap_1982  \
+country                                                                     
+Argentina     8052.953021     9443.038526    10079.026740     8997.897412   
+Bolivia       2586.886053     2980.331339     3548.097832     3156.510452   
+Brazil        3429.864357     4985.711467     6660.118654     7030.835878   
 
-print(bases[randrange(len(bases))])</code></pre>
-<p>Perhaps you found the <code>random.sample</code> function? It allows for slightly less typing:</p>
-<pre><code>from random import sample
+          gdpPercap_1987  gdpPercap_1992  gdpPercap_1997  gdpPercap_2002  \
+country                                                                     
+Argentina     9139.671389     9308.418710    10967.281950     8797.640716   
+Bolivia       2753.691490     2961.699694     3326.143191     3413.262690   
+Brazil        7807.095818     6950.283021     7957.980824     8131.212843   
 
-print(sample(bases, 1)[0])</code></pre>
-<p>Note that this function returns a list of values. We will learn about lists in episode 11.</p>
-<p>There’s also other functions you could use, but with more convoluted code as a result.</p>
+          gdpPercap_2007  
+country                    
+Argentina    12779.379640  
+Bolivia       3822.137084  
+Brazil        9065.800825 </code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>To check out the last three rows of <code>americas</code>, we would use the command, <code>americas.tail(n=3)</code>, analogous to <code>head()</code> used above. However, here we want to look at the last three columns so we need to change our view and then use <code>tail()</code>. To do so, we create a new DataFrame in which rows and columns are switched</li>
+</ol>
+<pre><code>americas_flipped = americas.T</code></pre>
+<p>We can then view the last three columns of <code>americas</code> by viewing the last three rows of <code>americas_flipped</code>:</p>
+<pre><code>americas_flipped.tail(n=3)</code></pre>
+<p>The output is then</p>
+<pre><code>country        Argentina  Bolivia   Brazil   Canada    Chile Colombia  \
+gdpPercap_1997   10967.3  3326.14  7957.98  28954.9  10118.1  6117.36   
+gdpPercap_2002   8797.64  3413.26  8131.21    33329  10778.8  5755.26   
+gdpPercap_2007   12779.4  3822.14   9065.8  36319.2  13171.6  7006.58   
+
+country        Costa Rica     Cuba Dominican Republic  Ecuador    ...     \
+gdpPercap_1997    6677.05  5431.99             3614.1  7429.46    ...      
+gdpPercap_2002    7723.45  6340.65            4563.81  5773.04    ...      
+gdpPercap_2007    9645.06   8948.1            6025.37  6873.26    ...      
+
+country          Mexico Nicaragua   Panama Paraguay     Peru Puerto Rico  \
+gdpPercap_1997   9767.3   2253.02  7113.69   4247.4  5838.35     16999.4   
+gdpPercap_2002  10742.4   2474.55  7356.03  3783.67  5909.02     18855.6   
+gdpPercap_2007  11977.6   2749.32  9809.19  4172.84  7408.91     19328.7   
+
+country        Trinidad and Tobago United States  Uruguay Venezuela  
+gdpPercap_1997             8792.57       35767.4  9230.24   10165.5  
+gdpPercap_2002             11460.6       39097.1     7727   8605.05  
+gdpPercap_2007             18008.5       42951.7  10611.5   11415.8  </code></pre>
+<p>Note: we could have done the above in a single line of code by ‘chaining’ the commands:</p>
+<pre><code>americas.T.tail(n=3)</code></pre>
+</div>
 </blockquote>
 </blockquote>
 <blockquote>
-<h2 id="jigsaw-puzzle-parsons-problem-programming-example">Jigsaw Puzzle (Parson’s Problem) Programming Example</h2>
-<p>Rearrange the following statements so that a random DNA base is printed and its index in the string. Not all statements may be needed. Feel free to use/add intermediate variables.</p>
-<pre><code>bases=&quot;ACTTGCTTGAC&quot;
-import math
-import random
-___ = random.randrange(n_bases)
-___ = len(bases)
-print(&quot;random base &quot;, bases[___], &quot;base index&quot;, ___)</code></pre>
+<h2 id="reading-files-in-other-directories">Reading Files in Other Directories</h2>
+<p>The data for your current project is stored in a file called <code>microbes.csv</code>, which is located in a folder called <code>field_data</code>. You are doing analysis in a notebook called <code>analysis.ipynb</code> in a sibling folder called <code>thesis</code>:</p>
+<pre><code>your_home_directory
++-- field_data/
+|   +-- microbes.csv
++-- thesis/
+    +-- analysis.ipynb</code></pre>
+<p>What value(s) should you pass to <code>read_csv</code> to read <code>microbes.csv</code> in <code>analysis.ipynb</code>?</p>
 <blockquote>
 <h2 id="solution-2">Solution</h2>
-<pre><code>import math 
-import random
-bases = &quot;ACTTGCTTGAC&quot; 
-n_bases = len(bases)
-idx = random.randrange(n_bases)
-print(&quot;random base&quot;, bases[idx], &quot;base index&quot;, idx)</code></pre>
+<div class="fold s">
+<p>We need to specify the path to the file of interest in the call to <code>pandas.read_csv</code>. We first need to ‘jump’ out of the folder <code>thesis</code> using ‘../’ and then into the folder <code>field_data</code> using ‘field_data/’. Then we can specify the filename `microbes.csv. The result is as follows:</p>
+<pre><code>data_microbes = pandas.read_csv('../field_data/microbes.csv')</code></pre>
+</div>
 </blockquote>
 </blockquote>
 <blockquote>
-<h2 id="when-is-help-available">When Is Help Available?</h2>
-<p>When a colleague of yours types <code>help(math)</code>, Python reports an error:</p>
-<pre><code>NameError: name 'math' is not defined</code></pre>
-<p>What has your colleague forgotten to do?</p>
+<h2 id="writing-data">Writing Data</h2>
+<p>As well as the <code>read_csv</code> function for reading data from a file, Pandas provides a <code>to_csv</code> function to write dataframes to files. Applying what you’ve learned about reading from files, write one of your dataframes to a file called <code>processed.csv</code>. You can use <code>help</code> to get information on how to use <code>to_csv</code>.</p>
 <blockquote>
 <h2 id="solution-3">Solution</h2>
-<p>Importing the math module (<code>import math</code>)</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="importing-with-aliases">Importing With Aliases</h2>
-<ol style="list-style-type: decimal">
-<li>Fill in the blanks so that the program below prints <code>90.0</code>.</li>
-<li>Rewrite the program so that it uses <code>import</code> <em>without</em> <code>as</code>.</li>
-<li>Which form do you find easier to read?</li>
-</ol>
-<pre><code>import math as m
-angle = ____.degrees(____.pi / 2)
-print(____)</code></pre>
-<blockquote>
-<h2 id="solution-4">Solution</h2>
-<pre><code>import math as m
-angle = m.degrees(m.pi / 2)
-print(angle)</code></pre>
-<p>can bewritten as</p>
-<pre><code>import math
-angle = math.degrees(math.pi / 2)
-print(angle)</code></pre>
-<p>Since you just wrote the code and are familiar with it, you might actually find the first version easier to read. But when trying to read a huge piece of code written by someone else, or when getting back to your own huge piece of code after several months, non-abbreviated names are often easier, except where there are clear abbreviation conventions.</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="there-are-many-ways-to-import-libraries">There Are Many Ways To Import Libraries!</h2>
-<p>Match the following print statements with the appropriate library calls.</p>
-<p>Print commands:</p>
-<ol style="list-style-type: decimal">
-<li><code>print(&quot;sin(pi/2) =&quot;,sin(pi/2))</code></li>
-<li><code>print(&quot;sin(pi/2) =&quot;,m.sin(m.pi/2))</code></li>
-<li><code>print(&quot;sin(pi/2) =&quot;,math.sin(math.pi/2))</code></li>
-</ol>
-<p>Library calls:</p>
-<ol style="list-style-type: decimal">
-<li><code>from math import sin,pi</code></li>
-<li><code>import math</code></li>
-<li><code>import math as m</code></li>
-<li><code>from math import *</code></li>
-</ol>
-<blockquote>
-<h2 id="solution-5">Solution</h2>
-<ol style="list-style-type: decimal">
-<li>Library calls 1 and 4. In order to directly refer to <code>sin</code> and <code>pi</code> without the library name as prefix, you need to use the <code>from ... import ...</code> statement. Whereas library call 1 specifically imports the two functions <code>sin</code> and <code>pi</code>, library call 4 imports all functions in the <code>math</code> module.</li>
-<li>Library call 3. Here <code>sin</code> and <code>pi</code> are referred to with a shortened library name <code>m</code> instead of <code>math</code>. Library call 3 does exactly that using the <code>import ... as ...</code> syntax - it creates an alias for <code>math</code> in the form of the shortened name <code>m</code>.</li>
-<li>Library call 2. Here <code>sin</code> and <code>pi</code> are referred to with the regular library name <code>math</code>, so the regular <code>import ...</code> call suffices.</li>
-</ol>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="importing-specific-items">Importing Specific Items</h2>
-<ol style="list-style-type: decimal">
-<li>Fill in the blanks so that the program below prints <code>90.0</code>.</li>
-<li>Do you find this version easier to read than preceding ones?</li>
-<li>Why <em>wouldn’t</em> programmers always use this form of <code>import</code>?</li>
-</ol>
-<pre><code>____ math import ____, ____
-angle = degrees(pi / 2)
-print(angle)</code></pre>
-<blockquote>
-<h2 id="solution-6">Solution</h2>
-<pre><code>from math import degrees, pi
-angle = degrees(pi / 2)
-print(angle)</code></pre>
-<p>Most likely you find this version easier to read since it’s less dense. The main reason not to use this form of import is to avoid name clashes. For instance, you wouldn’t import <code>degrees</code> this way if you also wanted to use the name <code>degrees</code> for a variable or function of your own. Or if you were to also import a function named <code>degrees</code> from another library.</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="reading-error-messages">Reading Error Messages</h2>
-<ol style="list-style-type: decimal">
-<li>Read the code below and try to identify what the errors are without running it.</li>
-<li>Run the code, and read the error message. What type of error is it?</li>
-</ol>
-<pre><code>from math import log
-log(0)</code></pre>
-<blockquote>
-<h2 id="solution-7">Solution</h2>
-<ol style="list-style-type: decimal">
-<li>The logarithm of <code>x</code> is only defined for <code>x &gt; 0</code>, so 0 is outside the domain of the function.</li>
-<li>You get an error of type “ValueError”, indicating that the function received an inappropriate argument value. The additional message “math domain error” makes it clearer what the problem is.</li>
-</ol>
+<div class="fold s">
+<p>In order to write the DataFrame <code>americas</code> to a file called <code>processed.csv</code>, execute the following command:</p>
+<pre><code>americas.to_csv('processed.csv')</code></pre>
+<p>For help on <code>to_csv</code>, you could execute, for example,</p>
+<pre><code>help(americas.to_csv)</code></pre>
+<p>Note that <code>help(to_csv)</code> throws an error! This is a subtlety and is due to the fact that <code>to_csv</code> is NOT a function in and of itself and the actual call is <code>americas.to_csv</code>.</p>
+</div>
 </blockquote>
 </blockquote>
 </div>
