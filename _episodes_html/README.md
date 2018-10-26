@@ -6,7 +6,7 @@
 6. [Reading Tabular](http://htmlpreview.github.com/?https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_html/reading_tabular.html)
 7. [Data Frames](http://htmlpreview.github.com/?https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_html/data_frames.html)
 8. [Plotting](http://htmlpreview.github.com/?https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_html/plot_base.html)
-9. [Lists](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_html/lists.html)
+9. [Lists](http://htmlpreview.github.com/?https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_html/lists.html)
 10. [For Loops](http://htmlpreview.github.com/?https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_html/for_loops.html)
 11. [Looping Data Sets](http://htmlpreview.github.com/?https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_html/looping_data_sets.html)
 12. [Writing Functions](http://htmlpreview.github.com/?https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_html/writing_functions.html)
