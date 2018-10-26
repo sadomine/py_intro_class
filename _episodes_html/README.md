@@ -1,6 +1,6 @@
 1. [Run Quit](http://htmlpreview.github.com/?https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_html/run_quit.html)
 2. [Variables](http://htmlpreview.github.com/?https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_html/variables.html)
-3. [Type Conversion](http://htmlpreview.github.com/?https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_html/types_conversions.html)
+3. [Type Conversion](http://htmlpreview.github.com/?https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_html/types_conversion.html)
 4. [Built In](http://htmlpreview.github.com/?https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_html/built_in.html)
 5. [Libraries](http://htmlpreview.github.com/?https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_html/libraries.html)
 6. [Reading Tabular](http://htmlpreview.github.com/?https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_html/reading_tabular.html)
