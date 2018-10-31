@@ -5,3 +5,6 @@
   https://creativecommons.org/licenses/by/4.0/ 
   
   The original Software Carpentry episodes have been modified and/or extended to meet the specific learning goals of this class.
+
+  Ying's Spark workshop materials can be found at: http://help.rc.ufl.edu
+  
