@@ -4,4 +4,4 @@
   found at: http://software-carpentry.org/.  The Creative Commons license which governs this work is located at:
   https://creativecommons.org/licenses/by/4.0/ 
   
-  The original Software Carpentry episodes have been modified and/or extended to meet the specific learning goals of this class.
+  The original Software Carpentry episodes have been modified and/or extended to meet the specific learning goals of this class.  
