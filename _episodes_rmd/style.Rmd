@@ -187,9 +187,9 @@ average(values)
 >
 > > ## Solution
 > > <div class="fold s">
-> > Here's one solution.
-> >
 > > ~~~
+> > # Here's one solution.
+> >
 > > def string_machine(input_string, iterations):
 > >     """
 > >     Takes input_string and generates a new string with -'s and *'s

@@ -144,11 +144,15 @@ cos(pi) is -1.0
 > 2. Since the library contains this function, why does `sqrt` exist?
 >
 > > ## Solution
-> > 1. Using `help(math)` we see that we've got `pow(x,y)` in addition to `sqrt(x)`
-> > 2. The `sqrt(x)` function (like much of the `math` library) has it's origins in
-> >    C's math library. Consequently, it might be somewhat faster than `pow(x,y)`.
-> >    Also, it might be more readable than `pow(x, 0.5)` when implementing equations.
-> >    However, `sqrt(x)` doesn't support negative arguments.
+> > <div class="fold s">
+> > ~~~
+> > # 1. Using `help(math)` we see that we've got `pow(x,y)` in addition to `sqrt(x)`
+> > # 2. The `sqrt(x)` function (like much of the `math` library) has it's origins in
+> > #    C's math library. Consequently, it might be somewhat faster than `pow(x,y)`.
+> > #    Also, it might be more readable than `pow(x, 0.5)` when implementing equations.
+> > #    However, `sqrt(x)` doesn't support negative arguments.
+> > ~~~
+> > </div>
 > 
 
 
@@ -167,45 +171,41 @@ cos(pi) is -1.0
 >
 > > ## Solution
 > > <div class="fold s">
-> > The [random module](randommod) seems like it could help you.
-> >
-> > The string has 11 characters, each having a positional index from 0 to 10.
-> > You could use `random.randrange` function (or the alias `random.randint`
-> > if you find that easier to remember) to get a random integer between 0 and
-> > 10, and then pick out the character at that position:
-> >
 > > ~~~
+> > # The [random module](randommod) seems like it could help you.
+> >
+> > # The string has 11 characters, each having a positional index from 0 to 10.
+> > # You could use `random.randrange` function (or the alias `random.randint`
+> > # if you find that easier to remember) to get a random integer between 0 and
+> > # 10, and then pick out the character at that position:
+> >
 > > from random import randrange
 > >
 > > random_index = randrange(len(bases))
 > > print(bases[random_index])
-> > ~~~
 > > 
 > >
-> > or more compactly:
+> > # or more compactly:
 > >
-> > ~~~
 > > from random import randrange
 > >
 > > print(bases[randrange(len(bases))])
-> > ~~~
 > > 
 > >
-> > Perhaps you found the `random.sample` function? It allows for slightly
-> > less typing:
+> > # Perhaps you found the `random.sample` function? It allows for slightly
+> > #  less typing:
 > >
-> > ~~~
 > > from random import sample
 > >
 > > print(sample(bases, 1)[0])
-> > ~~~
 > > 
 > >
-> > Note that this function returns a list of values. We will learn about
-> > lists in episode 11.
+> > # Note that this function returns a list of values. We will learn about
+> > # lists in episode 11.
 > >
-> > There's also other functions you could use, but with more convoluted
-> > code as a result.
+> > # There's also other functions you could use, but with more convoluted
+> > # code as a result.
+> > ~~~
 > > </div>
 > 
 
@@ -282,23 +282,21 @@ cos(pi) is -1.0
 > > import math as m
 > > angle = m.degrees(m.pi / 2)
 > > print(angle)
-> > ~~~
 > > 
 > >
-> > can bewritten as
+> > # can bewritten as
 > >
-> > ~~~
 > > import math
 > > angle = math.degrees(math.pi / 2)
 > > print(angle)
-> > ~~~
 > > 
+> > # Since you just wrote the code and are familiar with it, you might actually
+> > # find the first version easier to read. But when trying to read a huge piece
+> > # of code written by someone else, or when getting back to your own huge piece
+> > # of code after several months, non-abbreviated names are often easier, except
+> > # where there are clear abbreviation conventions.
+> > ~~~
 > > </div>
-> > Since you just wrote the code and are familiar with it, you might actually
-> > find the first version easier to read. But when trying to read a huge piece
-> > of code written by someone else, or when getting back to your own huge piece
-> > of code after several months, non-abbreviated names are often easier, except
-> > where there are clear abbreviation conventions.
 > 
 
 
@@ -320,17 +318,20 @@ cos(pi) is -1.0
 > 4. `from math import *`
 >
 > > ## Solution
-> >
-> > 1. Library calls 1 and 4. In order to directly refer to `sin` and `pi` without
-> >    the library name as prefix, you need to use the `from ... import ...`
-> >    statement. Whereas library call 1 specifically imports the two functions
-> >    `sin` and `pi`, library call 4 imports all functions in the `math` module.
-> > 2. Library call 3. Here `sin` and `pi` are referred to with a shortened library
-> >    name `m` instead of `math`. Library call 3 does exactly that using the
-> >    `import ... as ...` syntax - it creates an alias for `math` in the form of
-> >    the shortened name `m`.
-> > 3. Library call 2. Here `sin` and `pi` are referred to with the regular library
-> >    name `math`, so the regular `import ...` call suffices.
+> > <div class="fold s">
+> > ~~~
+> > # 1. Library calls 1 and 4. In order to directly refer to `sin` and `pi` without
+> > #    the library name as prefix, you need to use the `from ... import ...`
+> > #    statement. Whereas library call 1 specifically imports the two functions
+> > #    `sin` and `pi`, library call 4 imports all functions in the `math` module.
+> > # 2. Library call 3. Here `sin` and `pi` are referred to with a shortened library
+> > #    name `m` instead of `math`. Library call 3 does exactly that using the
+> > #    `import ... as ...` syntax - it creates an alias for `math` in the form of
+> > #     the shortened name `m`.
+> > # 3. Library call 2. Here `sin` and `pi` are referred to with the regular library
+> > #    name `math`, so the regular `import ...` call suffices.
+> > ~~~
+> > </div>
 > 
 
 
@@ -353,14 +354,14 @@ cos(pi) is -1.0
 > > from math import degrees, pi
 > > angle = degrees(pi / 2)
 > > print(angle)
+> >
+> > # Most likely you find this version easier to read since it's less dense.
+> > # The main reason not to use this form of import is to avoid name clashes.
+> > # For instance, you wouldn't import `degrees` this way if you also wanted to
+> > # use the name `degrees` for a variable or function of your own. Or if you
+> > # were to also import a function named `degrees` from another library.
 > > ~~~
 > > </div>
-> >
-> > Most likely you find this version easier to read since it's less dense.
-> > The main reason not to use this form of import is to avoid name clashes.
-> > For instance, you wouldn't import `degrees` this way if you also wanted to
-> > use the name `degrees` for a variable or function of your own. Or if you
-> > were to also import a function named `degrees` from another library.
 > 
 
 
@@ -376,12 +377,15 @@ cos(pi) is -1.0
 > 
 >
 > > ## Solution
-> >
-> > 1. The logarithm of `x` is only defined for `x > 0`, so 0 is outside the
-> >    domain of the function.
-> > 2. You get an error of type "ValueError", indicating that the function
-> >    received an inappropriate argument value. The additional message
-> >    "math domain error" makes it clearer what the problem is.
+> > <div class="fold s">
+> > ~~~
+> > # 1. The logarithm of `x` is only defined for `x > 0`, so 0 is outside the
+> > #    domain of the function.
+> > # 2. You get an error of type "ValueError", indicating that the function
+> > #    received an inappropriate argument value. The additional message
+> > #    "math domain error" makes it clearer what the problem is.
+> > ~~~
+> > </div>
 > 
 
 

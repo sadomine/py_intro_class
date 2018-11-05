@@ -192,11 +192,12 @@ result of call is: None
 > > <div class="fold s">
 > > ~~~
 > > calling <function report at 0x7fd128ff1bf8> 22.5
-> > ~~~ 
 > > 
 > >
-> > A function call always needs parenthesis, otherwise you get memory address of the function object. So, if we wanted to call the function named report, and give it the value 22.5 to report on, we could have our function call as follows
-> > ~~~
+> > # A function call always needs parenthesis, otherwise you get memory address of the function object. 
+> > # So, if we wanted to call the function named report, and give it the value 22.5 to report on, we 
+> > # could have our function call as follows
+> > 
 > > print("calling")
 > > report(22.5)
 > > ~~~
@@ -235,12 +236,15 @@ result of call is: None
 > 
 > 
 > > ## Solution
-> > 
-> > 1. The first line of output (`1871/3/19`) is from the print function inside `print_date()`, while the second line
-> > is from the print function below the function call. All of the code inside `print_date()` is executed first, and
-> > the program then "leaves" the function and executes the rest of the code.   
-> > 2. The problem with the example is that the function is defined *after* the call to the function is made. Python
-> > therefore doesn't understand the function call.
+> > <div class="fold s">
+> > ~~~
+> > # 1. The first line of output (`1871/3/19`) is from the print function inside `print_date()`, while the second line
+> > # is from the print function below the function call. All of the code inside `print_date()` is executed first, and
+> > # the program then "leaves" the function and executes the rest of the code.   
+> > # 2. The problem with the example is that the function is defined *after* the call to the function is made. Python
+> > # therefore doesn't understand the function call.
+> > ~~~
+> > </div>
 > 
 
 
@@ -291,16 +295,12 @@ result of call is: None
 > >     for v in values:
 > >         if v<0:
 > >             return v
-> > ~~~
 > > 
-> > If an empty list is passed to this function, it returns `None`:
+> > # If an empty list is passed to this function, it returns `None`:
 > > 
-> > ~~~
 > > my_list = []
 > > print(first_negative(my_list)
-> > ~~~
 > > 
-> > ~~~
 > > None
 > > ~~~
 > > </div>
@@ -328,14 +328,17 @@ result of call is: None
 > 3.  When and why is it useful to call functions this way?
 > 
 > > ## Solution
-> > 
-> > 1. `2003/2/1`
-> > 2. We saw examples of using *named arguments* when working with the pandas library. For example, when reading in a dataset 
-> > using `data = pandas.read_csv('data/gapminder_gdp_europe.csv', index_col='country')`, the last argument `index_col` is a 
-> > named argument.  
-> > 3. Using named arguments can make code more readable since one can see from the function call what name the different arguments 
-> > have inside the function. It can also reduce the chances of passing arguments in the wrong order, since by using named arguments 
-> > the order doesn't matter.
+> > <div class="fold s">
+> > ~~~
+> > # 1. `2003/2/1`
+> > # 2. We saw examples of using *named arguments* when working with the pandas library. For example, when reading in a dataset 
+> > # using `data = pandas.read_csv('data/gapminder_gdp_europe.csv', index_col='country')`, the last argument `index_col` is a 
+> > # named argument.  
+> > # 3. Using named arguments can make code more readable since one can see from the function call what name the different arguments 
+> > # have inside the function. It can also reduce the chances of passing arguments in the wrong order, since by using named arguments 
+> > # the order doesn't matter.
+> > ~~~
+> > </div>
 > 
 
 
@@ -474,11 +477,10 @@ result of call is: None
 > > 
 > >
 > > 3.
-> > 
-> > We need to loop over the reported years
-> >    to obtain the average for the relevant ones in the data.
-> >
 > > ~~~
+> > # We need to loop over the reported years
+> > # to obtain the average for the relevant ones in the data.
+> >
 > > def avg_gdp_in_decade(country, continent, year):
 > >     df = pandas.read_csv('data/gapminder_gdp_' + continent + '.csv', index_col=0)
 > >     c = df.loc[country]
@@ -490,16 +492,12 @@ result of call is: None
 > >             total = total + c.loc[yr_header]
 > >             num_years = num_years + 1
 > >     return total/num_years
-> > ~~~
 > > 
-> > The function can now be called by:
+> > # The function can now be called by:
 > > 
-> > ~~~
 > > avg_gdp_in_decade('Japan','asia',1983)
-> > ~~~
 > > 
 > > 
-> > ~~~
 > > 20880.023800000003
 > > ~~~
 > > </div>

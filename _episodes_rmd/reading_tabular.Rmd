@@ -237,10 +237,11 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 >
 > > ## Solution
 > > <div class="fold s">
-> > To read in a CSV, we use `pandas.read_csv` and pass the filename 'data/gapminder_gdp_americas.csv' to it. We also once again pass the
-> > column name 'country' to the parameter `index_col` in order to index by country:
-> > 
 > > ~~~
+> > # To read in a CSV, we use `pandas.read_csv` and pass the filename 'data/gapminder_gdp_americas.csv' to it. 
+> > # We also once again pass the
+> > # column name 'country' to the parameter `index_col` in order to index by country:
+> > 
 > > americas = pandas.read_csv('data/gapminder_gdp_americas.csv', index_col='country')
 > > ~~~
 > > </div>
@@ -261,18 +262,16 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 >
 > > ## Solution
 > > <div class="fold s">
-> > 1. We can check out the first five rows of `americas` by executing `americas.head()` (allowing us to view the head
-> > of the DataFrame). We can specify the number of rows we wish to see by specifying the parameter `n` in our call
-> > to `americas.head()`. To view the first three rows, execute:
-> >
 > > ~~~
+> > # 1. We can check out the first five rows of `americas` by executing `americas.head()` (allowing us to view the head
+> > # of the DataFrame). We can specify the number of rows we wish to see by specifying the parameter `n` in our call
+> > # to `americas.head()`. To view the first three rows, execute:
+> >
 > > americas.head(n=3)
-> > ~~~
 > >
 > > 
-> > The output is then
+> > # The output is then
 > > 
-> > ~~~
 > >          continent  gdpPercap_1952  gdpPercap_1957  gdpPercap_1962  \
 > >country                                                               
 > >Argentina  Americas     5911.315053     6856.856212     7133.166023   
@@ -296,27 +295,21 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 > >Argentina    12779.379640  
 > >Bolivia       3822.137084  
 > >Brazil        9065.800825 
-> > ~~~ 
 > >
-> > 2. To check out the last three rows of `americas`, we would use the command, `americas.tail(n=3)`,
-> > analogous to `head()` used above. However, here we want to look at the last three columns so we need
-> > to change our view and then use `tail()`. To do so, we create a new DataFrame in which rows and 
-> > columns are switched
+> > # 2. To check out the last three rows of `americas`, we would use the command, `americas.tail(n=3)`,
+> > # analogous to `head()` used above. However, here we want to look at the last three columns so we need
+> > # to change our view and then use `tail()`. To do so, we create a new DataFrame in which rows and 
+> > # columns are switched
 > > 
-> > ~~~
 > > americas_flipped = americas.T
-> > ~~~
 > >
 > >
-> > We can then view the last three columns of `americas` by viewing the last three rows of `americas_flipped`:
+> > # We can then view the last three columns of `americas` by viewing the last three rows of `americas_flipped`:
 > > 
-> > ~~~
 > > americas_flipped.tail(n=3)
-> > ~~~
 > >
-> > The output is then
+> > # The output is then
 > > 
-> > ~~~
 > > country        Argentina  Bolivia   Brazil   Canada    Chile Colombia  \
 > > gdpPercap_1997   10967.3  3326.14  7957.98  28954.9  10118.1  6117.36   
 > > gdpPercap_2002   8797.64  3413.26  8131.21    33329  10778.8  5755.26   
@@ -336,11 +329,9 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 > > gdpPercap_1997             8792.57       35767.4  9230.24   10165.5  
 > > gdpPercap_2002             11460.6       39097.1     7727   8605.05  
 > > gdpPercap_2007             18008.5       42951.7  10611.5   11415.8  
-> > ~~~ 
 > >
-> > Note: we could have done the above in a single line of code by 'chaining' the commands:
+> > # Note: we could have done the above in a single line of code by 'chaining' the commands:
 > > 
-> > ~~~
 > > americas.T.tail(n=3)
 > > ~~~
 > > </div>
@@ -367,11 +358,12 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 > 
 > > ## Solution
 > > <div class="fold s">
-> > We need to specify the path to the file of interest in the call to `pandas.read_csv`. We first need to 'jump' out of
-> > the folder `thesis` using '../' and then into the folder `field_data` using 'field_data/'. Then we can specify the filename `microbes.csv.
-> > The result is as follows:
-> > 
 > > ~~~
+> > # We need to specify the path to the file of interest in the call to `pandas.read_csv`. We first need to 'jump' out of
+> > # the folder `thesis` using '../' and then into the folder `field_data` using 'field_data/'. 
+> > # Then we can specify the filename `microbes.csv.
+> > # The result is as follows:
+> > 
 > > data_microbes = pandas.read_csv('../field_data/microbes.csv')
 > > ~~~
 > > </div>
@@ -388,18 +380,16 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 > 
 > > ## Solution
 > > <div class="fold s">
-> > In order to write the DataFrame `americas` to a file called `processed.csv`, execute the following command:
-> > 
 > > ~~~
+> > # In order to write the DataFrame `americas` to a file called `processed.csv`, execute the following command:
+> > 
 > > americas.to_csv('processed.csv')
-> > ~~~
 > >
-> > For help on `to_csv`, you could execute, for example,
+> > # For help on `to_csv`, you could execute, for example,
 > > 
-> > ~~~
 > > help(americas.to_csv)
-> > ~~~
 > >
-> > Note that `help(to_csv)` throws an error! This is a subtlety and is due to the fact that `to_csv` is NOT a function in 
-> > and of itself and the actual call is `americas.to_csv`. 
+> > # Note that `help(to_csv)` throws an error! This is a subtlety and is due to the fact that `to_csv` is NOT a function in 
+> > # and of itself and the actual call is `americas.to_csv`. 
+> > ~~~
 > > </div>

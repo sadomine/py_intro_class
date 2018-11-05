@@ -105,12 +105,14 @@ keypoints:
 > Use the shortcuts to delete a cell
 >
 > > ## Solution
-> >
-> > Command mode has a grey boarder and Edit mode has a green border. 
-> > Use "esc" and "Enter" to switch between modes. 
-> > You need to be in command mode (Hit "esc" if your cell is green).  Type "B" or "A".
-> > You need to be in command mode (Hit "esc" if your cell is green).  Type "X".
-> >
+> > <div class="fold s">
+> > ~~~
+> > # Command mode has a grey boarder and Edit mode has a green border. 
+> > # Use "esc" and "Enter" to switch between modes. 
+> > # You need to be in command mode (Hit "esc" if your cell is green).  Type "B" or "A".
+> > # You need to be in command mode (Hit "esc" if your cell is green).  Type "X".
+> > ~~~
+> > </div>
 > 
 
 
@@ -293,9 +295,9 @@ Or use [named links][data_carpentry].
 > 
 > > ## Solution
 > > <div class="fold s">
-> > Python returns the output of the last calculation.
-> > 
 > > ~~~
+> > # Python returns the output of the last calculation.
+> > 
 > > 3
 > > ~~~
 > > </div>
@@ -322,11 +324,11 @@ Or use [named links][data_carpentry].
 > 
 > > ## Solution
 > > <div class="fold s">
-> > The Python code gets treated like markdown text.
-> > The lines appear as if they are part of one contiguous paragraph.
-> > This could be useful to temporarily turn on and off cells in notebooks that get used for multiple purposes.
-> > 
 > > ~~~
+> > # The Python code gets treated like markdown text.
+> > # The lines appear as if they are part of one contiguous paragraph.
+> > # This could be useful to temporarily turn on and off cells in notebooks that get used for multiple purposes.
+> > 
 > > x = 6 * 7 + 12 print(x)
 > > ~~~
 > > </div>
@@ -349,13 +351,17 @@ Or use [named links][data_carpentry].
 > What do you think the underscore, `_`, circumflex, `^`, and dollar sign, `$`, do?
 > 
 > > ## Solution
-> > 
-> > The notebook shows the equation as it would be rendered from latex equation syntax.
-> > The dollar sign, `$`, is used to tell markdown that the text in between is a latex equation.
-> > If you're not familiar with latex,  underscore, `_`, is used for subscripts and circumflex, `^`, is used for superscripts.
-> > A pair of curly braces, `{` and `}`, is used to group text together so that the statement `i=1` becomes the the subscript and `N` becomes the superscript.
-> > Similarly, `-i` is in curly braces to make the whole statement the superscript for `2`.
-> > `\sum` and `\approx` are latex commands for "sum over" and "approximate" symbols. 
+> > <div class="fold s">
+> > ~~~
+> > # The notebook shows the equation as it would be rendered from latex equation syntax.
+> > # The dollar sign, `$`, is used to tell markdown that the text in between is a latex equation.
+> > # If you're not familiar with latex,  underscore, `_`, is used for subscripts and circumflex, `^`, is used for superscripts.
+> > # A pair of curly braces, `{` and `}`, is used to group text together so that the statement `i=1` 
+> > # becomes the the subscript and `N` becomes the superscript.
+> > # Similarly, `-i` is in curly braces to make the whole statement the superscript for `2`.
+> > # `\sum` and `\approx` are latex commands for "sum over" and "approximate" symbols. 
+> > ~~~
+> > </div>
 > 
 
 
