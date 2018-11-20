@@ -229,11 +229,11 @@ print(ewr_422_yY, 'is', flabadab, 'years old')
 > > swap = x   # 1.0          # 3.0          # 1.0           #
 > > x = y      # 3.0          # 3.0          # 1.0           #
 > > y = swap   # 3.0          # 1.0          # 1.0           #
+> > 
+> > 
+> > # These three lines exchange the values in `x` and `y` using the `swap`
+> > # variable for temporary storage. This is a fairly common programming idiom.
 > > ~~~
-> > 
-> > 
-> > These three lines exchange the values in `x` and `y` using the `swap`
-> > variable for temporary storage. This is a fairly common programming idiom.
 > > </div>
 >
 
@@ -254,14 +254,14 @@ print(ewr_422_yY, 'is', flabadab, 'years old')
 > > <div class="fold s">
 > > ~~~
 > > 'left'
-> > ~~~
 > > 
 > >
->> The `initial` variable is assigned the value 'left'.
-> > In the second line, the `position` variable also receives
->> the string value 'left'. In third line, the `initial` variable is given the
->> value 'right', but the `position` variable retains its string value
->> of 'left'.
+> > # The `initial` variable is assigned the value 'left'.
+> > # In the second line, the `position` variable also receives
+> > # the string value 'left'. In third line, the `initial` variable is given the
+> > # value 'right', but the `position` variable retains its string value
+> > # of 'left'.
+> > ~~~
 > > </div>
 >
 
@@ -273,15 +273,13 @@ print(ewr_422_yY, 'is', flabadab, 'years old')
 >
 > > ## Solution
 > > <div class="fold s">
-> > Numbers are not stored in the written representation,
-> > so they can't be treated like strings.
-> >
 > > ~~~
+> > # Numbers are not stored in the written representation,
+> > # so they can't be treated like strings.
+> >
 > > a = 123
 > > print(a[1])
-> > ~~~
 > > 
-> > ~~~
 > > TypeError: 'int' object is not subscriptable
 > > ~~~
 > > </div>
@@ -300,9 +298,12 @@ print(ewr_422_yY, 'is', flabadab, 'years old')
 > 3. `total_seconds = minutes * 60 + seconds`
 >
 > > ## Solution
-> >
-> > `minutes` is better because `min` might mean something like "minimum"
-> > (and actually does in Python, but we haven't seen that yet).
+> > <div class="fold s">
+> > ~~~
+> > # `minutes` is better because `min` might mean something like "minimum"
+> > # (and actually does in Python, but we haven't seen that yet).
+> > ~~~
+> > </div>
 > 
 
 

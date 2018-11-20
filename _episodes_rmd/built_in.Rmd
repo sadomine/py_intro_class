@@ -306,10 +306,14 @@ result of print is None
 > Why don't `max` and `min` return `None` when they are given no arguments?
 >
 > > ## Solution
+> ><div class="fold s">
+> > ~~~
 > > `max` and `min` return TypeErrors in this case because the correct number of parameters
 > > was not supplied. If it just returned `None`, the error would be much harder to trace as it
 > > would likely be stored into a variable and used later in the program, only to likely throw
 > > a runtime error.
+> > ~~~
+> ></div>
 > 
 
 

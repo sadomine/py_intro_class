@@ -122,8 +122,11 @@ data/gapminder_gdp_oceania.csv 10039.59564
 > 4. 1 and 2 are not matched.
 >
 > > ## Solution
-> >
-> > 1 is not matched by the glob.
+> > <div class="fold s">
+> > ~~~
+> > # 1 is not matched by the glob.
+> > ~~~
+> > </div>
 > 
 
 

@@ -184,10 +184,15 @@ print(total)
 
 > ## Classifying Errors
 >
-> Is an indentation error a syntax error or a runtime error?
+> Is an indentation error a syntax error or a runtime error?  
+>
 > > ## Solution
-> > An IndentationError is a syntax error. Programs with syntax errors cannot be started.
-> > A program with a runtime error will start but an error will be thrown under certain conditions.
+> > <div class="fold s">
+> > ~~~
+> > # An IndentationError is a syntax error. Programs with syntax errors cannot be started.
+> > # A program with a runtime error will start but an error will be thrown under certain conditions.
+> > ~~~
+> > </div> 
 > 
 
 
@@ -203,7 +208,8 @@ print(total)
 > ~~~
 > 
 > > ## Solution
-> > 
+> > <div class="fold s">
+> > ~~~
 > > | Line no | Variables            |
 > > |---------|----------------------|
 > > | 1       | total = 0            |
@@ -213,6 +219,8 @@ print(total)
 > > | 3       | total = 2 char = 'i' |
 > > | 2       | total = 2 char = 'n' |
 > > | 3       | total = 3 char = 'n' |
+> > ~~~
+> > </div>
 > 
 
 
