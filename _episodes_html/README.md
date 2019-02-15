@@ -1,4 +1,4 @@
-1. [Run Quit](http://htmlpreview.github.com/?https://github.com/mydatastory/py_intro_class/blob/master/_episodes_html/run_quit.html)
+1. [Run Quit](https://rawcdn.githack.com/mydatastory/py_intro_class/4e0b45a103b11167844605fecc6c190421916eee/_episodes_html/run_quit.html)
 2. [Variables](http://htmlpreview.github.com/?https://github.com/mydatastory/py_intro_class/blob/master/_episodes_html/variables.html)
 3. [Type Conversion](http://htmlpreview.github.com/?https://github.com/mydatastory/py_intro_class/blob/master/_episodes_html/types_conversion.html)
 4. [Built In](http://htmlpreview.github.com/?https://github.com/mydatastory/py_intro_class/blob/master/_episodes_html/built_in.html)
