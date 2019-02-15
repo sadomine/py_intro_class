@@ -5,4 +5,5 @@
   https://creativecommons.org/licenses/by/4.0/. The original Software Carpentry episodes have been modified and/or extended to meet the
   specific learning goals of this class. 
   
-  Matt Gitzendanner's Python course material can be found [here](https://github.com/CompTools/Class_Files).
+ ## Notes
+- All .html files are rendered using [raw githack](https://raw.githack.com) because htmlpreview.github stopped working properly.
