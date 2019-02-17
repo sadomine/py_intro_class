@@ -1,23 +1,23 @@
 ---
 title: "Variables and Assignment"
+keypoints:
+- Use variables to store values.
+- Use `print` to display values.
+- Variables persist between cells.
+- Variables must be created before they are used.
+- Variables can be used in calculations.
+- Use an index to get a single character from a string.
+- Use a slice to get a substring.
+- Use the built-in function `len` to find the length of a string.
+- Python is case-sensitive.
+- Use meaningful variable names.
+objectives:
+- Write programs that assign scalar values to variables and perform calculations with
+  those values.
+- Correctly trace value changes in programs that use scalar assignment.
+questions: How can I store data in programs?
 teaching: 10
 exercises: 10
-questions:
-- "How can I store data in programs?"
-objectives:
-- "Write programs that assign scalar values to variables and perform calculations with those values."
-- "Correctly trace value changes in programs that use scalar assignment."
-keypoints:
-- "Use variables to store values."
-- "Use `print` to display values."
-- "Variables persist between cells."
-- "Variables must be created before they are used."
-- "Variables can be used in calculations."
-- "Use an index to get a single character from a string."
-- "Use a slice to get a substring."
-- "Use the built-in function `len` to find the length of a string."
-- "Python is case-sensitive."
-- "Use meaningful variable names."
 ---
 
 <script src="hideOutput_md.js"></script>
@@ -106,7 +106,7 @@ NameError: name 'last_name' is not defined
 > 
 >
 > If you execute this in order, the first cell will give an error. However, if you run the first cell **after** the second
-> cell it will print out ‘1’. To prevent confusion, it can be helpful to use the `Kernel` -> `Restart & Run All` option which
+> cell it will print out 1. To prevent confusion, it can be helpful to use the `Kernel` -> `Restart & Run All` option which
 > clears the interpreter and runs everything from a clean slate going top to bottom.
 {: .callout}
 
