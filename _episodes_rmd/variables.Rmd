@@ -108,7 +108,6 @@ NameError: name 'last_name' is not defined
 > If you execute this in order, the first cell will give an error. However, if you run the first cell **after** the second
 > cell it will print out 1. To prevent confusion, it can be helpful to use the `Kernel` -> `Restart & Run All` option which
 > clears the interpreter and runs everything from a clean slate going top to bottom.
-{: .callout}
 
 ## Variables can be used in calculations.
 
