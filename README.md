@@ -8,3 +8,4 @@
  ## Notes
 - All .html files are rendered using [raw githack](https://raw.githack.com) because htmlpreview.github stopped working properly.
 - These episodes use hideOutput_md.js instead of hideOutput.js.
+- Matt Gitzendanner's Python class materials can be found [here](https://github.com/CompTools/Class_Files).
