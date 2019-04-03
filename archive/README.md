@@ -1,11 +1,1 @@
-# Introduction to Python (Episode Order)
-1. [Python Intro](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/python_intro.ipynb)
-2. [Built In](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/built_in.ipynb)
-3. [Libraries](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/libraries.ipynb)
-4. [Data Subsetting](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/data_subsetting.ipynb)
-5. [Data Structures](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/data_structures.ipynb)
-6. [Plotting](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/plot_base.ipynb)
-7. [For Loops](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/for_loops.ipynb)
-8. [Looping Data Sets](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/looping_data_sets.ipynb)
-9. [Writing Functions](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/writing_functions.ipynb)
-10. [Conditionals](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/conditionals.ipynb)
+#### This folder contains Jupyter Notebooks created by Greg Harvey.  We attempted to duplicate the *Intro to R* learning experience but ran into a variety of issues and decided to go back to the base Carpentry sequence.  Some of the work done here, however, might be useful in future learning experiences.
