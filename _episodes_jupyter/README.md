@@ -1,5 +1,5 @@
 # Introduction to Python
-1. [![Run Quit](../fig/JupyterNotebooks.png)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/run_quit.ipynb)
+1. [![Run Quit](../fig/JupyterNotebooks.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/run_quit.ipynb)
 2. [Variables](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/variables.ipynb)
 3. [Type Conversion](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/types_conversions.ipynb)
 4. [Built In](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/built_in.ipynb)
