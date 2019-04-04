@@ -1,7 +1,7 @@
 # Introduction to Python
 [![Run Quit](../fig/JupyterNotebooks.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/run_quit.ipynb)
 [![Variables](../fig/Variables.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/variables.ipynb)
-3. [![Type Conversions](../fig/TypeConversions.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/types_conversions.ipynb)
+[![Type Conversions](../fig/TypeConversions.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/types_conversions.ipynb)
 4. [Built In](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/built_in.ipynb)
 5. [Libraries](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/libraries.ipynb)
 6. [Reading Tabular](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/reading_tabular.ipynb)
