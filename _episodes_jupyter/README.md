@@ -4,6 +4,7 @@
 [![Type Conversions](../fig/TypeConversions.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/types_conversions.ipynb)
 [![Built Ins](../fig/BuiltIns.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/built_in.ipynb)
 [![Libraries](..fig/Libraries.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/libraries.ipynb)
+
 6. [Reading Tabular](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/reading_tabular.ipynb)
 7. [Data Frames](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/data_frames.ipynb)
 8. [Plotting](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/plotting.ipynb)
