@@ -15,6 +15,8 @@
 14. [Style](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/style.ipynb)
 15. [Wrap](https://github.com/mydatastory-dev/py_intro_class/blob/master/_episodes_jupyter/wrap.ipynb)
 
+1. [Run Quit](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/built_in.ipynb)
+
 ## Setting the Start Directory in Jupter: 
 
 1. [StackOverflow](https://stackoverflow.com/questions/35254852/how-to-change-the-jupyter-start-up-folder#36433389)
