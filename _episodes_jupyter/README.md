@@ -6,8 +6,8 @@
 [![Libraries](../fig/Libraries.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/libraries.ipynb)
 [![Reading Tab Data](../fig/ReadingTabData.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/reading_tabular.ipynb)
 [![Data Frames](../fig/DataFrames.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/data_frames.ipynb)
+[![Plotting](../fig/Plotting.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/plotting.ipynb)
 
-8. [Plotting](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/plotting.ipynb)
 9. [Lists](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/lists.ipynb)
 10. [For Loops](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/for_loops.ipynb)
 11. [Looping Data Sets](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/looping_data_sets.ipynb)
