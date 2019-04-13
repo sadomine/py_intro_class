@@ -13,8 +13,8 @@
 11. [Looping Data Sets](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/looping_data_sets.ipynb)
 
 [![Functions](../fig/Functions.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/writing_functions.ipynb)
+[![Conditionals](../fig/Conditionals.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/conditionals.ipynb)
 
-13. [Conditionals](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/conditionals.ipynb)
 14. [Style](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/style.ipynb)
 15. [Wrap](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/wrap.ipynb)
 
