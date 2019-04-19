@@ -9,9 +9,6 @@
 [![Plotting](../fig/Plotting.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/plotting.ipynb)
 [![Lists](../fig/Lists.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/lists.ipynb)
 [![For Loops](../fig/Loops.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/for_loops.ipynb)
-
-11. [Looping Data Sets](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/looping_data_sets.ipynb)
-
 [![Functions](../fig/Functions.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/writing_functions.ipynb)
 [![Conditionals](../fig/Conditionals.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/conditionals.ipynb)
 
