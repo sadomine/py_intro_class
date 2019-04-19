@@ -8,7 +8,7 @@
 [![Data Frames](../fig/DataFrames.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/data_frames.ipynb)
 [![Plotting](../fig/Plotting.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/plotting.ipynb)
 [![Lists](../fig/Lists.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/lists.ipynb)
-[![For Loops](../fig/Loops.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/for_loops.ipynb)
+[![Loops](../fig/Loops.PNG)](https://github.com/mydatastory/py_intro_class/blob/master/_episodes_jupyter/loops_main.md)
 [![Functions](../fig/Functions.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/writing_functions.ipynb)
 [![Conditionals](../fig/Conditionals.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/conditionals.ipynb)
 
