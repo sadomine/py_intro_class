@@ -11,9 +11,7 @@
 [![Loops](../fig/Loops.PNG)](https://github.com/mydatastory/py_intro_class/blob/master/_episodes_jupyter/loops_main.md)
 [![Functions](../fig/Functions.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/writing_functions.ipynb)
 [![Conditionals](../fig/Conditionals.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/conditionals.ipynb)
-
-14. [Style](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/style.ipynb)
-15. [Wrap](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/wrap.ipynb)
+[![Style](../fig/Style.PNG)](https://nbviewer.jupyter.org/github/mydatastory/py_intro_class/blob/master/_episodes_jupyter/style.ipynb)
 
 ## Setting the Start Directory in Jupter: 
 
