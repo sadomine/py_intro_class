@@ -7,7 +7,6 @@
  ## Notes
 - All .html files are rendered using [raw githack](https://raw.githack.com) because htmlpreview.github stopped working properly.
 - The Jupyter notebooks are rendered using [nbviewer](https://nbviewer.jupyter.org/).
-- These episodes use hideOutput_md.js instead of hideOutput.js.
 - Matt Gitzendanner's Python class materials can be found [here](https://github.com/CompTools/Class_Files).
 - Mindy McAdams' Python class materials can be found [here](https://github.com/macloo/python-beginners).
 - Hiding Jupyter Code Blocks can be found [here](https://jupyter.org/jupyter-book/features/hiding.html).
