@@ -1,8 +1,8 @@
 ## Introduction to Python
 
-  The episodes in this course are derived from work that is Copyrighted © by Software Carpentry.  Additional information can be
-  found at: http://software-carpentry.org/.  The Creative Commons license which governs this work is located at:
-  https://creativecommons.org/licenses/by/4.0/. The original [Software Carpentry episodes](http://swcarpentry.github.io/python-novice-gapminder/) have been modified and/or extended to meet the specific learning goals of this class.  
+The episodes in this course are derived from work that is Copyrighted © by Software Carpentry.  Additional information can be
+found at: http://software-carpentry.org/.  The Creative Commons license which governs this work is located at:
+https://creativecommons.org/licenses/by/4.0/. The original Software Carpentry episodes have been modified and/or extended to meet the specific learning goals of this class.  
   
 ## Original Software Carpentry Course
 [python-novice-gapminder](https://github.com/swcarpentry/python-novice-gapminder)
