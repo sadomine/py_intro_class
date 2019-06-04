@@ -13,6 +13,7 @@
 - Matt Gitzendanner's Python class materials can be found [here](https://github.com/CompTools/Class_Files).
 - Mindy McAdams' Python class materials can be found [here](https://github.com/macloo/python-beginners).
 
+## To-Do List (May 30, 2019)
 - Convert the scope lesson to .ipynb format.
 - The for_loops.ipynb is missing the Q & A section.
 - The plotting.ipynb is missing the *Adding a Legend* section.
